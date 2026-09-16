@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{%- comment -%}
+  Pages under modules/<slug>/ set `module: <slug>` in front matter. This layout
+  looks the module up in _data/modules.yml and builds a sub-navigation from its
+  sibling pages, ordered by `nav_order`.
+{%- endcomment -%}
+{%- assign mod = site.data.modules | where: "slug", page.module | first -%}
+{%- assign siblings = site.pages | where: "module", page.module | sort: "nav_order" -%}
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="{{ '/modules/' | relative_url }}">Modules</a>
+  <span aria-hidden="true">/</span>
+  {%- if page.nav_order == 0 -%}
+    <span>{{ mod.title }}</span>
+  {%- else -%}
+    <a href="{{ '/modules/' | append: page.module | append: '/' | relative_url }}">{{ mod.title | escape }}</a>
+    <span aria-hidden="true">/</span>
+    <span>{{ page.title | escape }}</span>
+  {%- endif -%}
+</nav>
+
+<header class="page-head">
+  <h1>{{ page.title | escape }}</h1>
+  {%- if page.nav_order == 0 -%}
+    <p class="meta">
+      <span class="badge badge--{{ mod.status }}">{{ mod.status | replace: '-', ' ' }}</span>
+      <span class="muted">{{ mod.term }}</span>
+    </p>
+  {%- endif -%}
+  {%- if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif -%}
+</header>
+
+{%- if siblings.size > 1 %}
+<nav class="subnav" aria-label="{{ mod.title }} sections">
+  {%- for p in siblings %}
+    <a href="{{ p.url | relative_url }}"{% if p.url == page.url %} aria-current="page"{% endif %}>{{ p.short_title | default: p.title | escape }}</a>
+  {%- endfor %}
+</nav>
+{%- endif %}
+
+<div class="prose">
+  {{ content }}
+</div>

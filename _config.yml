@@ -1,0 +1,48 @@
+title: Ahmed Abou Raya
+tagline: MSc Artificial Intelligence e-Portfolio
+description: >-
+  e-Portfolio for the MSc Artificial Intelligence programme at the
+  University of Essex Online — module artefacts, collaborative discussion
+  summaries, team outputs, reflective pieces and professional development.
+author: Ahmed Abou Raya
+institution: University of Essex Online
+programme: MSc Artificial Intelligence
+
+url: https://aabouraya.github.io
+baseurl: /msc-ai-portfolio
+
+# Optional — shown in the footer / About page when set.
+github_username: aabouraya
+linkedin_url: ""
+email: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .jekyll-cache
+  # Source code and raw artefacts are browsed on GitHub, not rendered as pages.
+  - artefacts
+
+defaults:
+  - scope:
+      path: "modules"
+    values:
+      layout: module
+
+# Top-level navigation.
+nav:
+  - title: Home
+    url: /
+  - title: Modules
+    url: /modules/
+  - title: Skills & PDP
+    url: /skills/
+  - title: About
+    url: /about/

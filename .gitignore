@@ -1,0 +1,72 @@
+# ---- Jekyll build output ----
+# Generated from the sources on every build; GitHub Pages builds it server-side.
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# ---- Ruby / Bundler ----
+.bundle/
+vendor/
+# GitHub Pages pins its own gem versions and ignores a committed lockfile, so
+# tracking it only creates local churn.
+Gemfile.lock
+
+# ---- Python (agent code under artefacts/) ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---- Node (only if tooling is added later) ----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# ---- Secrets ----
+# This repository is public: never commit credentials, even in an artefact.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.y*ml
+
+# ---- Editors and OS ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- Logs and scratch ----
+*.log
+tmp/
+.tmp/
+
+# ---- Re-included: evidence blocked by the global gitignore ----
+# ~/.gitignore_global ignores *.csv. Datasets are assessed evidence in this
+# programme (Machine Learning, and the statistical analysis activities in
+# Research Methods), so they are re-included here. Repository rules are applied
+# after global ones, so this negation wins. Files inside an excluded *directory*
+# (.venv/, _site/) stay ignored regardless, which is what we want.
+!*.csv
+
+# NOTE: do not add broad document patterns here (*.pdf, *.png, *.docx, *.ipynb).
+# Tutor feedback, datasets, diagrams and submitted work are portfolio evidence
+# and must stay tracked. Check `git check-ignore -v <path>` before assuming a
+# missing file is your mistake — it may be a global rule.

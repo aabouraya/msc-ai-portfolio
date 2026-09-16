@@ -1,0 +1,129 @@
+# Single source of truth for module metadata.
+# Adding a module: add an entry here, then create modules/<slug>/ pages.
+# status: in-progress | completed | not-started
+
+- slug: intelligent-agents
+  title: Intelligent Agents
+  status: in-progress
+  term: July 2026
+  assessed: true
+  summary: >-
+    Agent architectures, multi-agent coordination and the design and
+    implementation of an agent-based system, with attention to the legal,
+    social, ethical and professional context.
+  outcomes:
+    - Identify and critically analyse agent-based systems, differentiating
+      between architectures and approaches.
+    - Apply and critically evaluate intelligent agent techniques to real-world
+      problems, particularly where technical risk and uncertainty is involved.
+    - Deploy critically appropriate software tools and skills for the design and
+      implementation of an agent-based system, bearing in mind applicable legal,
+      social, ethical, and professional issues.
+    - Systematically develop and implement the skills required to be an effective
+      member of a development team in a virtual professional environment,
+      adopting real-life perspectives on team roles and organisation.
+  skills:
+    - Time management
+    - Commercial awareness
+    - Critical thinking and analysis
+    - Communication and literacy skills
+    - IT and digital
+    - Resilience
+    - Interpersonal
+    - Problem-solving
+    - Ethical awareness
+    - Teamwork / global citizen and leadership
+    - Critical reflection
+
+- slug: machine-learning
+  title: Machine Learning
+  status: not-started
+  term: TBC
+  assessed: true
+  summary: >-
+    Applying and critically appraising machine learning techniques to
+    real-world problems, including dataset suitability and the professional
+    and ethical issues facing ML practitioners.
+  outcomes:
+    - Articulate the legal, social, ethical and professional issues faced by
+      machine learning professionals.
+    - Understand the applicability and challenges associated with different
+      datasets for the use of machine learning algorithms.
+    - Apply and critically appraise machine learning techniques to real-world
+      problems, particularly where technical risk and uncertainty is involved.
+    - Systematically develop and implement the skills required to be an effective
+      member of a development team in a virtual professional environment,
+      adopting real-life perspectives on team roles and organisation.
+  skills:
+    - Time management
+    - Commercial awareness
+    - Critical thinking and analysis
+    - Communication and literacy skills
+    - IT and digital
+    - Numeracy
+    - Research
+    - Interpersonal
+    - Problem-solving
+    - Ethical awareness
+    - Teamwork / global citizen and leadership
+    - Critical reflection
+
+- slug: knowledge-representation-and-reasoning
+  title: Knowledge Representation and Reasoning
+  status: not-started
+  term: TBC
+  assessed: true
+  summary: >-
+    Formal approaches to representing knowledge, the properties of
+    knowledge-based systems, and modelling techniques applied to KRR problems.
+  outcomes:
+    - Critique the need for formal approaches to knowledge representation and
+      reasoning.
+    - Review critically properties of a knowledge-based system.
+    - Appraise critically modelling techniques for knowledge representation and
+      reasoning.
+    - Examine and incorporate different modelling approaches to solving KRR
+      problems.
+  skills:
+    - Time management
+    - Critical thinking and analysis
+    - Communication and literacy skills
+    - IT and digital
+    - Numeracy
+    - Research
+    - Interpersonal
+    - Problem-solving
+    - Ethical awareness
+
+- slug: research-methods-and-professional-practice
+  title: Research Methods and Professional Practice
+  status: not-started
+  term: TBC
+  assessed: true
+  summary: >-
+    Principles of academic investigation, critical evaluation of literature and
+    methodology, and the production of a research proposal — alongside the
+    professional, legal, social, cultural and ethical context of computing.
+  outcomes:
+    - Appraise the professional, legal, social, cultural and ethical issues that
+      affect computing professionals.
+    - Appraise the principles of academic investigation, applying them to a
+      research topic in the applicable computing field.
+    - Evaluate critically existing literature, research design and methodology
+      for the chosen topic, including data analysis processes.
+    - Produce and evaluate critically the resulting research proposal for the
+      chosen topic.
+  skills:
+    - Time management
+    - Commercial awareness
+    - Critical thinking and analysis
+    - Decision-making
+    - Problem-solving
+    - Initiative
+    - Entrepreneurial
+    - Communication and literacy skills
+    - Numeracy
+    - IT and digital
+    - Interpersonal
+    - Critical reflection
+    - Research

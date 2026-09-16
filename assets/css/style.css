@@ -1,0 +1,284 @@
+/* MSc AI e-Portfolio — single stylesheet.
+   Light and dark are driven by prefers-color-scheme via these variables. */
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f6f7f9;
+  --text: #1c1f23;
+  --text-muted: #5b636d;
+  --border: #e2e5e9;
+  --accent: #1f5f8b;
+  --accent-soft: #eaf2f8;
+  --ok: #1f7a4d;
+  --ok-soft: #e6f4ec;
+  --warn: #8a5a00;
+  --warn-soft: #fbf1dc;
+  --radius: 8px;
+  --measure: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171a;
+    --bg-soft: #1c2024;
+    --text: #e6e8ea;
+    --text-muted: #9aa3ad;
+    --border: #2c3238;
+    --accent: #78b9e0;
+    --accent-soft: #1b2b36;
+    --ok: #6dc99a;
+    --ok-soft: #16281f;
+    --warn: #d9ab5c;
+    --warn-soft: #2a2115;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 1rem; top: 1rem;
+  z-index: 10;
+  padding: .5rem .75rem;
+  background: var(--bg);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.brand { text-decoration: none; color: inherit; display: block; }
+.brand-name { display: block; font-weight: 650; font-size: 1.05rem; letter-spacing: -.01em; }
+.brand-sub { display: block; font-size: .82rem; color: var(--text-muted); }
+
+.site-nav { display: flex; flex-wrap: wrap; gap: 1.25rem; font-size: .93rem; }
+.site-nav a { color: var(--text-muted); text-decoration: none; }
+.site-nav a:hover { color: var(--text); }
+.site-nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
+
+/* ---------- Page structure ---------- */
+
+main { padding: 2.25rem 1.25rem 4rem; }
+
+.page-head { margin-bottom: 1.75rem; }
+.page-head h1 { font-size: 1.9rem; line-height: 1.2; letter-spacing: -.02em; margin: 0 0 .5rem; }
+
+.lede { font-size: 1.05rem; color: var(--text-muted); max-width: var(--measure); margin: .5rem 0 0; }
+
+.hero { padding: 1rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2rem; }
+.hero h1 { font-size: 2.2rem; letter-spacing: -.025em; margin: 0 0 .35rem; }
+.hero .subtitle { font-size: 1.1rem; color: var(--text-muted); margin: 0; }
+
+/* `.prose` constrains text to a comfortable reading measure while letting
+   specific children break out to the full container width. The max-width is on
+   the grid *column*, not the container, so `.cards` and `.wide` can span both
+   columns and use the whole width. */
+.prose {
+  display: grid;
+  grid-template-columns: minmax(0, var(--measure)) minmax(0, 1fr);
+}
+.prose > * { grid-column: 1; min-width: 0; }
+/* Full-width children: card grids, wide tables, and section headings — the
+   heading's top border reads as a rule across the whole content column. */
+.prose > .cards,
+.prose > .wide,
+.prose > h2 { grid-column: 1 / -1; }
+
+/* Grid items do not collapse margins, so adjacent block margins would otherwise
+   double. Spacing inside .prose is therefore bottom-margin only, with headings
+   keeping an explicit top margin. */
+.prose > p, .prose > ul, .prose > ol,
+.prose > pre, .prose > blockquote, .prose > .todo { margin: 0 0 1rem; }
+.prose > table, .prose > .wide, .prose > .cards { margin: 0 0 1.25rem; }
+.prose > h2 { margin: 2.25rem 0 .75rem; }
+.prose > h3 { margin: 1.5rem 0 .5rem; }
+.prose > h2:first-child, .prose > h3:first-child { margin-top: 0; }
+
+/* The typography below is scoped to `main`, not `.prose`, so content outside a
+   prose wrapper is styled identically. */
+
+main h2 {
+  margin: 2.5rem 0 .75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 1.3rem;
+  letter-spacing: -.01em;
+}
+main h2:first-child, .prose > h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+main h3 { margin: 1.75rem 0 .5rem; font-size: 1.05rem; }
+main li + li { margin-top: .3rem; }
+main img { max-width: 100%; height: auto; border-radius: var(--radius); }
+
+.muted { color: var(--text-muted); }
+.meta { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; font-size: .88rem; margin: .5rem 0; }
+
+/* ---------- Breadcrumb & sub-navigation ---------- */
+
+.breadcrumb { font-size: .85rem; color: var(--text-muted); margin-bottom: 1.25rem; }
+.breadcrumb a { color: var(--text-muted); }
+.breadcrumb span { margin: 0 .35rem; }
+
+.subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: 0 0 2.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+.subnav a {
+  padding: .3rem .7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: .85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.subnav a:hover { color: var(--text); border-color: var(--text-muted); }
+.subnav a[aria-current="page"] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ---------- Cards ---------- */
+
+.cards {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem 1.25rem;
+  background: var(--bg-soft);
+}
+.card h3 { margin: 0; font-size: 1.05rem; }
+.card h3 a { text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; }
+.card p:last-child { margin-bottom: 0; font-size: .92rem; color: var(--text-muted); }
+
+/* ---------- Badges ---------- */
+
+.badge {
+  display: inline-block;
+  padding: .12rem .5rem;
+  border-radius: 999px;
+  font-size: .74rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.badge--in-progress { background: var(--accent-soft); color: var(--accent); }
+.badge--completed   { background: var(--ok-soft);     color: var(--ok); }
+.badge--not-started { background: var(--bg-soft);     color: var(--text-muted); border: 1px solid var(--border); }
+.badge--draft       { background: var(--warn-soft);   color: var(--warn); }
+
+/* ---------- Tables ---------- */
+
+main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: .92rem;
+}
+main th, main td {
+  text-align: left;
+  vertical-align: top;
+  padding: .55rem .7rem;
+  border-bottom: 1px solid var(--border);
+}
+main th { background: var(--bg-soft); font-weight: 650; }
+
+/* Wide tables (skills matrix) may exceed the reading measure. */
+.wide { max-width: none; overflow-x: auto; }
+
+/* ---------- Code & quotes ---------- */
+
+main code {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: .1rem .3rem;
+  font-size: .88em;
+}
+main pre {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  overflow-x: auto;
+}
+main pre code { background: none; border: 0; padding: 0; }
+
+main blockquote {
+  margin: 1.25rem 0;
+  padding: .25rem 0 .25rem 1rem;
+  border-left: 3px solid var(--border);
+  color: var(--text-muted);
+}
+
+/* A placeholder / to-do note, so unfinished sections are obvious. */
+.todo {
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: .9rem 1.1rem;
+  background: var(--bg-soft);
+  color: var(--text-muted);
+  font-size: .92rem;
+}
+.todo p:first-child { margin-top: 0; }
+.todo p:last-child { margin-bottom: 0; }
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  font-size: .87rem;
+  color: var(--text-muted);
+}
+.site-footer p { margin: .2rem 0; }

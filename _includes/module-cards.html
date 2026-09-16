@@ -1,0 +1,16 @@
+{%- comment -%}
+  Renders every module in _data/modules.yml as a card. Used on the home page
+  and the Modules index.
+{%- endcomment -%}
+<ul class="cards">
+  {%- for mod in site.data.modules %}
+  <li class="card">
+    <h3><a href="{{ '/modules/' | append: mod.slug | append: '/' | relative_url }}">{{ mod.title }}</a></h3>
+    <p class="meta">
+      <span class="badge badge--{{ mod.status }}">{{ mod.status | replace: '-', ' ' }}</span>
+      <span class="muted">{{ mod.term }}</span>
+    </p>
+    <p>{{ mod.summary }}</p>
+  </li>
+  {%- endfor %}
+</ul>
