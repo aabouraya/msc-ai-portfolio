@@ -149,11 +149,6 @@ only answer within the ontology and competence it has been given.
   the two mutually intelligible.
 
 <div class="todo" markdown="1">
-Check this against the dialogue you actually submitted and replace it if they
-differ — the portfolio should hold your submitted answer.
-</div>
-
-<div class="todo" markdown="1">
 Add the remaining weekly formative activities as `### Week N — …` sections above,
 each with its badge and the outcomes it evidences. If they grow past a handful,
 move them to a page of their own.
