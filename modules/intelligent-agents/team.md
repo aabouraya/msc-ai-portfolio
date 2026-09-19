@@ -20,21 +20,6 @@ I took the minutes for all four meetings and posted them to the module forum on
 team members' surnames are reduced to an initial, for consistency with how peers
 are identified elsewhere in this portfolio.
 
-## The team
-
-| Member | Joined at | Contributions recorded in the minutes |
-| --- | --- | --- |
-| Ahmed Abou Raya (me) | Meeting 1 | Agent roles and multi-agent justification; co-presented the first HLD draft; co-authored the requirements, tooling and methodology draft; produced the Blackboard interaction flow diagrams |
-| Yasmin | Meeting 1 | Agent roles and multi-agent justification; co-presented the first HLD draft; consolidated the HLD and produced its visual version |
-| Adel A. | Meeting 2 | Co-authored the requirements, tooling and methodology draft; standardised and finalised the system requirements |
-
-<div class="todo" markdown="1">
-Record **how** roles were agreed — allocated, volunteered or rotated. The
-minutes show who did what but not how it was decided, and LO4 is about team
-organisation as well as output. The team contract agreed in Meeting 1 is the
-place this was settled, so summarise it here or link to it.
-</div>
-
 ## Meeting log
 
 <div class="wide" markdown="1">
@@ -55,7 +40,7 @@ the main reason four meetings were enough.
 
 ### Meeting 1 — Initial Architecture Brainstorming &amp; Governance
 
-<p class="post-meta">6 August 2026 · minuted by me, posted to the forum 1 September 2026</p>
+<p class="post-meta">6 August 2026 · minuted by me</p>
 
 <div class="post" markdown="1">
 
@@ -83,7 +68,7 @@ the main reason four meetings were enough.
 
 ### Meeting 2 — High-Level Design Draft &amp; Scope Definition
 
-<p class="post-meta">14 August 2026 · minuted by me, posted to the forum 1 September 2026</p>
+<p class="post-meta">14 August 2026 · minuted by me</p>
 
 <div class="post" markdown="1">
 
@@ -103,7 +88,7 @@ the main reason four meetings were enough.
 
 ### Meeting 3 — Draft Consolidation &amp; Alignment
 
-<p class="post-meta">24 August 2026 · minuted by me, posted to the forum 1 September 2026</p>
+<p class="post-meta">24 August 2026 · minuted by me</p>
 
 <div class="post" markdown="1">
 
@@ -123,7 +108,7 @@ the main reason four meetings were enough.
 
 ### Meeting 4 — Finalize high system design and system requirements
 
-<p class="post-meta">29 August 2026 · minuted by me, posted to the forum 1 September 2026</p>
+<p class="post-meta">29 August 2026 · minuted by me</p>
 
 <div class="post" markdown="1">
 
