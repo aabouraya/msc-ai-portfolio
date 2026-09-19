@@ -126,7 +126,8 @@ main { padding: 2.25rem 1.25rem 4rem; }
    double. Spacing inside .prose is therefore bottom-margin only, with headings
    keeping an explicit top margin. */
 .prose > p, .prose > ul, .prose > ol,
-.prose > pre, .prose > blockquote, .prose > .todo { margin: 0 0 1rem; }
+.prose > pre, .prose > blockquote, .prose > .todo,
+.prose > .post, .prose > .references { margin: 0 0 1rem; }
 .prose > table, .prose > .wide, .prose > .cards { margin: 0 0 1.25rem; }
 .prose > h2 { margin: 2.25rem 0 .75rem; }
 .prose > h3 { margin: 1.5rem 0 .5rem; }
@@ -260,6 +261,27 @@ main blockquote {
   border-left: 3px solid var(--border);
   color: var(--text-muted);
 }
+
+/* A verbatim reproduction of a submitted forum post or piece of feedback, so a
+   reader can tell submitted work apart from portfolio commentary around it. */
+.post {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  background: var(--bg-soft);
+}
+.post > :first-child { margin-top: 0; }
+.post > :last-child { margin-bottom: 0; }
+.post-meta {
+  font-size: .85rem;
+  color: var(--text-muted);
+  margin-bottom: .9rem;
+}
+
+/* Hanging indent, as Harvard reference lists are set. */
+.references p, .references li { padding-left: 1.6rem; text-indent: -1.6rem; }
+.references ul { list-style: none; padding-left: 1.6rem; }
 
 /* A placeholder / to-do note, so unfinished sections are obvious. */
 .todo {

@@ -26,9 +26,9 @@ is the map — it is what a reader should be able to check the portfolio against
 
 | Artefact | Section | Evidences | Status |
 | --- | --- | --- | --- |
-| Collaborative discussion — initial post | [Discussions](discussions/) | LO1, LO4 | Not started |
-| Collaborative discussion — peer responses | [Discussions](discussions/) | LO1, LO4 | Not started |
-| Collaborative discussion — summary post | [Discussions](discussions/) | LO1, LO4 | Not started |
+| Discussion 1 — initial post | [Discussions](discussions/) | LO1 | Complete |
+| Discussion 1 — peer responses and what I learned | [Discussions](discussions/) | LO1, LO4 | Complete |
+| Discussion 1 — summary post | [Discussions](discussions/) | LO1, LO4 | Complete |
 | Team project — agent design | [Team](team/) | LO1, LO2, LO3 | Not started |
 | Team project — meeting notes | [Team](team/) | LO4 | Not started |
 | Agent-based system implementation | [Artefacts](artefacts/) | LO2, LO3 | Not started |
