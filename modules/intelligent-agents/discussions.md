@@ -9,9 +9,10 @@ summary: >-
   discussion forum. Evidences LO1 and LO4.
 ---
 
-Each discussion is recorded in three sections: my initial post, a summary of the
-peer responses it drew and what I took from them, and my summary post. My own
-posts are reproduced verbatim as submitted.
+Each discussion is recorded in two parts. **Part 1** is my own thread — my
+initial post, the peer responses it drew, and my summary post. **Part 2** is the
+responses I wrote to other students' initial posts. Everything I submitted is
+reproduced verbatim; the summaries of other people's posts are my own précis.
 
 Peers are identified by first name and initial only.
 
@@ -23,7 +24,9 @@ The thread ran from 5 to 16 August 2026. It moved from a diagnosis — LLM-based
 agents buy adaptability at the cost of reliability — to the question of which
 controls make that trade-off manageable for an organisation.
 
-### 1. My initial post
+### Part 1 — My thread
+
+#### My initial post
 
 <p class="post-meta">Posted Wednesday, 5 August 2026 · 241 words excluding references</p>
 
@@ -83,7 +86,7 @@ AI', *arXiv preprint* arXiv:2502.14143. Available at:
 
 </div>
 
-### 2. Peer responses and what I learned
+#### Peer responses to my post, and what I learned
 
 Two peers responded.
 
@@ -115,7 +118,7 @@ oversight, monitoring frameworks, and clearly defined operational boundaries
 
 These controls make failures detectable and containable. They do not remove them.
 
-### 3. My summary post
+#### My summary post
 
 <p class="post-meta">Posted Sunday, 16 August 2026 · 347 words excluding references</p>
 
@@ -208,10 +211,178 @@ Representations (ICLR 2024)*. Vienna, Austria, 7–11 May. Available at:
 
 </div>
 
+### Part 2 — My responses to peers
+
+I responded to two other initial posts, both on Sunday, 9 August 2026 — a week
+before I wrote my summary post. Each response is reproduced verbatim; the
+summary of the peer's own post is my précis of it.
+
+#### Response to Luis T. — multi-agent systems in manufacturing
+
+**His initial post.** Luis argued that centralised manufacturing control
+achieves high productivity but depends on large monolithic software that is
+expensive to customise and maintain (Leitão, 2009). Multi-agent systems
+decompose the problem across autonomous agents and are already used in planning,
+scheduling, logistics and energy reduction (Pulikottil et al., 2021). His
+conclusion was that industrial adoption is still limited by two kinds of
+barrier — **technical**, as there is no general reference architecture and
+integrating heterogeneous systems and protocols is hard, and
+**organisational**, as decentralised decision-making sits badly with managers
+used to central control.
+
+**My response**
+
+<p class="post-meta">Posted Sunday, 9 August 2026 · 198 words excluding the salutation and references</p>
+
+<div class="post" markdown="1">
+
+Hi Luis,
+
+I totally agree with your point that Multi-Agent Systems (MAS) are a great
+alternative to monolithic manufacturing control systems. You have also correctly
+identified the struggles and limitations that traditional centralized
+architectures face with the extreme customization and agility demands of the
+globalized economy.
+
+However, in my opinion, the technical and organizational barriers that you have
+mentioned are being resolved by recent advances. For instance, Bi et al. (2024)
+illustrate that the challenge of integrating heterogeneous production systems can
+be mitigated using a distributed decision-making framework, which can enable
+resource allocation in real-time during disruptions, such as machine breakdowns.
+
+Furthermore, organizational barriers can be addressed by integrating MAS with
+Large Language Models (LLMs). As demonstrated by Lim et al. (2024), LLMs can be
+used to interpret and act on natural language provided by users. This allows the
+translation of human language into machine actions such as G-Code allocation.
+Yet, LLMs raise new risks that did not exist before. Tikka et al. (2026) noted
+that the probabilistic nature of LLMs can cause hallucinations that can lead to
+inaccurate operational parameters. Consequently, we cannot rely on LLMs without
+enforcing deterministic guardrails and Retrieval-Augmented Generation (RAG)
+pipelines to mitigate these risks.
+
+**References**
+
+<div class="references" markdown="1">
+
+Bi, M., Kovalenko, I., Tilbury, D.M. and Barton, K. (2024) 'Dynamic distributed
+decision-making for resilient resource reallocation in disrupted manufacturing
+systems', *International Journal of Production Research*, 62(5), pp. 1737–1757.
+Available at: <https://arxiv.org/pdf/2507.19043>
+
+Lim, J., Vogel-Heuser, B. and Kovalenko, I. (2024) 'Large Language
+Model-Enabled Multi-Agent Manufacturing Systems', *2024 IEEE 20th International
+Conference on Automation Science and Engineering (CASE)*, pp. 3940–3946.
+Available at: <https://ieeexplore.ieee.org/document/10711432>
+
+Tikka, P., Karjalainen, J., Alesani, A. and Goriachev, V. (2026) 'Large Language
+Model Hallucination Mitigation in Three Industrial Use Cases', *IEEE Access*,
+14, pp. 25564–25576. Available at: <https://arxiv.org/abs/2404.08189>
+
+</div>
+
+</div>
+
+**What I learned**
+
+- A "limited adoption" claim needs a date check. The integration barrier Luis
+  cited from 2009–2021 sources has partial answers now (Bi et al., 2024), so the
+  argument is about *how far* the barrier has moved, not whether it exists.
+- Organisational barriers can have technical remedies. A natural-language
+  interface (Lim et al., 2024) lowers the cost of accepting decentralisation,
+  rather than arguing managers out of it.
+- **Every fix carries its own failure mode.** Adding an LLM to remove a
+  usability barrier introduces hallucination. I reached the same trade-off I had
+  argued in my own initial post, but from the manufacturing side — which is what
+  made me treat it as general rather than domain-specific.
+
+#### Response to Khadijah H. — the rise of intelligent agents
+
+**Her initial post.** Khadijah described AI agents as tools that remember tasks,
+use one or more models and act with little supervision, reaching browsers, CRM
+systems and cloud storage to do their work — behaving "more like an employee"
+than a programmed robot (Boston Consulting Group, 2026). She set out use cases
+across marketing, sales, IT, supply chain and software development (Hayes and
+Downie, 2025), and framed the direction of travel as McKinsey's "agentic
+organisation", in which early adopters gain an advantage in automation,
+decision-making, cost and personalisation (Sukharevsky et al., 2025).
+
+**My response**
+
+<p class="post-meta">Posted Sunday, 9 August 2026 · 203 words excluding the salutation and references</p>
+
+<div class="post" markdown="1">
+
+Hi Khadijah,
+
+I strongly agree with you that AI agents represent a significant technological
+leap. You have correctly identified the concept of the "agentic organisation" and
+the potential for competitive advantage that organisations can gain from it.
+
+However, I would argue that AI agents cannot run autonomously without
+supervision due to the risks that they introduce when executing complex,
+high-stakes decisions. As Asaftei and Roberts (2026) noted, organisations must
+shift their focus toward creating solid governance structures to mitigate risks
+introduced by AI instead of deploying AI agents blindly.
+
+Furthermore, as Slesarenko (2025) demonstrated, implementing a Human-in-the-Loop
+(HitL) approach is necessary to ensure strict oversight of ethics and compliance
+with safety and regulatory standards. This is explicitly validated by Jiang et
+al. (2026), whose research on industrial control systems emphasises that the true
+value of agentic AI currently lies in safety-aware and explainable decision
+support rather than unrestricted autonomous control.
+
+In conclusion, autonomous AI agents that execute actions without human
+intervention can pose significant risks, as a single faulty decision by
+autonomous agents can lead to data leaks, financial losses or system outages,
+which can impact the organisation's reputation. Therefore, technical governance
+must be applied to AI agents to enforce continued monitoring and
+human-in-the-loop policies.
+
+**References**
+
+<div class="references" markdown="1">
+
+Asaftei, G.M. and Roberts, R. (2026) 'State of AI trust in 2026: shifting to the
+agentic era', *McKinsey & Company*. Available at:
+<https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/state-of-ai-trust-in-2026-shifting-to-the-agentic-era>
+
+Jiang, X., Xie, H., Wang, J., Yang, Z., Zhou, Y., Yao, L. and Zhu, Z. (2026)
+'Agentic AI for Safety-Aware Process Monitoring and Fault Diagnosis: A Review'.
+Available at: <https://www.proquest.com/docview/3363962734>
+
+Slesarenko, A. (2025) 'Human-in-the-Loop (HitL) Agentic AI for High-Stakes
+Oversight 2026', *OneReach.ai*. Available at:
+<https://onereach.ai/blog/human-in-the-loop-agentic-ai-systems/>
+
+</div>
+
+</div>
+
+**What I learned**
+
+- The "agent as employee" analogy is good for adoption and bad for
+  accountability. An employee can be held answerable; an agent cannot, so the
+  responsibility stays with whoever deployed it.
+- Early-adopter advantage arguments price the upside and rarely price the cost
+  of one bad autonomous action — data leak, financial loss, outage.
+- The useful question is not *how autonomous* but *autonomous over what*.
+  Safety-aware, explainable decision support (Jiang et al., 2026) with a human
+  in the loop (Slesarenko, 2025) is where the value sits today.
+- Arguing this twice in one day, in two different domains, is what turned it from
+  an opinion into the position I took in my summary post.
+
 <div class="todo" markdown="1">
-**One fix to carry forward.** Both posts set the Mohajeri Parizi et al. (2019)
-entry in APA (ampersand, year after the names, no quotation marks) while every
-other entry is UoE Harvard. The posts are reproduced verbatim here because they
-are a transcript, so correct the style in future submissions rather than editing
-the record.
+**Two fixes to carry forward.**
+
+1. Both of my own thread posts set the Mohajeri Parizi et al. (2019) entry in
+   APA (ampersand, year after the names, no quotation marks) while every other
+   entry is UoE Harvard.
+2. In the response to Luis, two entries give an arXiv link whose identifier
+   encodes a date that cannot match the publication cited — `2507.19043` is
+   July 2025 against a 2024 journal article, and `2404.08189` is April 2024
+   against a 2026 one. Cite the version actually read, and use the publisher DOI
+   when citing the journal version.
+
+Everything above is reproduced verbatim because it is a transcript, so correct
+the style in future submissions rather than editing the record.
 </div>

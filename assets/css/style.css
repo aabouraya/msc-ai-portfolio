@@ -130,7 +130,8 @@ main { padding: 2.25rem 1.25rem 4rem; }
 .prose > .post, .prose > .references { margin: 0 0 1rem; }
 .prose > table, .prose > .wide, .prose > .cards { margin: 0 0 1.25rem; }
 .prose > h2 { margin: 2.25rem 0 .75rem; }
-.prose > h3 { margin: 1.5rem 0 .5rem; }
+.prose > h3 { margin: 2rem 0 .5rem; }
+.prose > h4 { margin: 1.5rem 0 .5rem; }
 .prose > h2:first-child, .prose > h3:first-child { margin-top: 0; }
 
 /* The typography below is scoped to `main`, not `.prose`, so content outside a
@@ -144,7 +145,10 @@ main h2 {
   letter-spacing: -.01em;
 }
 main h2:first-child, .prose > h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
-main h3 { margin: 1.75rem 0 .5rem; font-size: 1.05rem; }
+/* h3 is a part heading, h4 a subsection within it, so they need to be told
+   apart at a glance without another border rule. */
+main h3 { margin: 2rem 0 .5rem; font-size: 1.2rem; letter-spacing: -.01em; }
+main h4 { margin: 1.75rem 0 .5rem; font-size: 1rem; font-weight: 650; }
 main li + li { margin-top: .3rem; }
 main img { max-width: 100%; height: auto; border-radius: var(--radius); }
 
