@@ -251,6 +251,7 @@ main code {
   font-size: .88em;
 }
 main pre {
+  margin: 0;
   background: var(--bg-soft);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -258,6 +259,12 @@ main pre {
   overflow-x: auto;
 }
 main pre code { background: none; border: 0; padding: 0; }
+
+/* kramdown + rouge wrap a fenced block in
+   div.highlighter-rouge > div.highlight > pre, so inside .prose the grid child is
+   the wrapper div and not the <pre>. Spacing therefore belongs on the wrapper. */
+.prose > div.highlighter-rouge { margin: 0 0 1rem; }
+div.highlighter-rouge div.highlight { margin: 0; }
 
 main blockquote {
   margin: 1.25rem 0;
