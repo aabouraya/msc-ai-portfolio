@@ -28,7 +28,7 @@ is the map — it is what a reader should be able to check the portfolio against
 | --- | --- | --- | --- |
 | Collaborative Discussion 1 — my thread and my responses to peers | [Discussion 1](discussions/#discussion-1--agent-based-systems-in-contemporary-organisations) | LO1, LO4 | Complete |
 | Team project — agent design | [Team](team/) | LO1, LO2, LO3 | Not started |
-| Team project — meeting notes | [Team](team/) | LO4 | Not started |
+| Team project — meeting notes (4 design meetings, Aug 2026) | [Meeting log](team/#meeting-log) | LO4 | Complete |
 | Agent-based system implementation | [Artefacts](artefacts/) | LO2, LO3 | Not started |
 | Tutor and peer feedback log | [Feedback](feedback/) | LO4 | Not started |
 | Professional skills matrix and PDP | [Skills &amp; PDP](skills/) | LO4 | Not started |
