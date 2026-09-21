@@ -31,6 +31,7 @@ is the map — it is what a reader should be able to check the portfolio against
 | Team project — meeting notes (4 design meetings, Aug 2026) | [Meeting log](team/#meeting-log) | LO4 | Complete |
 | Agent-based system implementation | [Artefacts](artefacts/) | LO2, LO3 | Not started |
 | Week 6 formative activity — agent dialogues in KQML and KIF | [Artefacts](artefacts/#week-6--creating-agent-dialogues-in-kqml-and-kif) | LO1, LO2 | Complete |
+| Formative activity — constituency-based parse trees | [Artefacts](artefacts/#constituency-based-parse-trees) | LO2 | Complete |
 | Tutor and peer feedback log | [Feedback](feedback/) | LO4 | Not started |
 | Professional skills matrix and PDP | [Skills &amp; PDP](skills/) | LO4 | Not started |
 | Reflective piece | [Reflection](reflection/) | LO1–LO4 | Not started |

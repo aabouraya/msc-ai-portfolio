@@ -148,6 +148,115 @@ only answer within the ontology and competence it has been given.
   performatives carry intent, content carries the claim, and the ontology makes
   the two mutually intelligible.
 
+### Constituency-based parse trees
+
+<p class="meta"><span class="badge badge--completed">completed</span> <span class="muted">Evidences LO2</span></p>
+
+**The brief.** Draw a constituency-based parse tree for three phrases: *The
+government raised interest rates.* / *The internet gives everyone a voice.* /
+*The man saw the dog with the telescope.*
+
+Trees are written as indented plain text. It reads as a tree, diffs cleanly in
+git, and needs no image toolchain or JavaScript — the same reason the KQML above
+is a code block.
+
+Tags: `S` sentence · `NP` noun phrase · `VP` verb phrase · `PP` prepositional
+phrase · `DT` determiner · `NN` noun · `NNS` plural noun · `VBD` past-tense verb
+· `VBZ` third-person verb · `IN` preposition. Sentence-final punctuation is
+omitted.
+
+#### 1. The government raised interest rates.
+
+```
+S
+├── NP
+│   ├── DT   The
+│   └── NN   government
+└── VP
+    ├── VBD  raised
+    └── NP
+        ├── NN   interest
+        └── NNS  rates
+```
+
+*interest rates* is a single NP — a noun compound, not two separate arguments of
+the verb.
+
+#### 2. The internet gives everyone a voice.
+
+```
+S
+├── NP
+│   ├── DT   The
+│   └── NN   internet
+└── VP
+    ├── VBZ  gives
+    ├── NP
+    │   └── NN   everyone
+    └── NP
+        ├── DT   a
+        └── NN   voice
+```
+
+*gives* is ditransitive, so the VP takes two NP objects — the recipient
+(*everyone*) and the thing given (*a voice*).
+
+#### 3. The man saw the dog with the telescope.
+
+This one is structurally ambiguous. Both trees are grammatical, and they differ
+only in where the PP attaches.
+
+**Reading A — the man used the telescope.** The PP attaches to the VP, modifying
+*saw*.
+
+```
+S
+├── NP
+│   ├── DT   The
+│   └── NN   man
+└── VP
+    ├── VBD  saw
+    ├── NP
+    │   ├── DT   the
+    │   └── NN   dog
+    └── PP
+        ├── IN   with
+        └── NP
+            ├── DT   the
+            └── NN   telescope
+```
+
+**Reading B — the dog had the telescope.** The PP attaches inside the object NP,
+modifying *dog*.
+
+```
+S
+├── NP
+│   ├── DT   The
+│   └── NN   man
+└── VP
+    ├── VBD  saw
+    └── NP
+        ├── NP
+        │   ├── DT   the
+        │   └── NN   dog
+        └── PP
+            ├── IN   with
+            └── NP
+                ├── DT   the
+                └── NN   telescope
+```
+
+#### What this demonstrates
+
+- **Technique applied to a real problem.** Constituency structure is what meaning
+  attaches to. Sentence 1 shows why: read *interest* and *rates* as separate
+  objects and the sentence means something the writer did not say.
+- **A live research issue.** Sentence 3 is PP-attachment ambiguity, and syntax
+  alone cannot settle it — resolving it needs world knowledge or context, not a
+  better grammar. This is the same failure mode as an agent that parses an
+  instruction correctly and still grounds it to the wrong referent.
+
 <div class="todo" markdown="1">
 Add the remaining weekly formative activities as `### Week N — …` sections above,
 each with its badge and the outcomes it evidences. If they grow past a handful,
