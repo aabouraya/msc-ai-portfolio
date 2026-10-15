@@ -58,9 +58,15 @@ module column at the end of that module.
 
 | # | Development objective | Action | Success measure | Target date | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | *e.g. Strengthen academic writing in Harvard style* | *Action you will take* | *How you will know it worked* | *Date* | Open |
+| 1 | Turn intentions into checkable rules: a number or rule for every evaluation criterion and control | Apply it in the next design document, starting with Critic precision and recall targets and a per-subtask cap in ScholarPlan | Next design's feedback does not repeat the point | Next team project (Machine Learning) | Open |
+| 2 | Minutes that record decisions | *Decision, owner, due date* format, posted within one day | Every meeting has a recorded decision and owner | Next team project (Machine Learning) | Open |
+| 3 | Consistent UoE Harvard referencing | Check each reference against the guide before posting; cite the version read | No style mismatches on a pre-submission self-check | First discussion of the next module | Open |
+| 4 | Show structure as well as behaviour in designs | Add a UML class diagram to ScholarPlan; include a structural view in every design | Diagram added to the Intelligent Agents artefacts | End of Intelligent Agents | **Closed** 14 Oct 2026 |
 
 </div>
+
+Objectives 1–4 come from Intelligent Agents; the evidence behind each is on the
+[module action plan]({{ '/modules/intelligent-agents/skills/' | relative_url }}#action-plan).
 
 <div class="todo" markdown="1">
 Keep this to three or four live objectives. Close them off explicitly rather

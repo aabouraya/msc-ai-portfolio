@@ -151,6 +151,11 @@ main h3 { margin: 2rem 0 .5rem; font-size: 1.2rem; letter-spacing: -.01em; }
 main h4 { margin: 1.75rem 0 .5rem; font-size: 1rem; font-weight: 650; }
 main li + li { margin-top: .3rem; }
 main img { max-width: 100%; height: auto; border-radius: var(--radius); }
+/* Diagrams are usually exported on white, so they keep a light frame in dark
+   mode too. The caption sits under the image as the source documents set it. */
+main figure { margin: 1.25rem 0; }
+main figure img { display: block; background: #fff; border: 1px solid var(--border); }
+main figcaption { margin-top: .5rem; font-size: .88rem; color: var(--text-muted); }
 
 .muted { color: var(--text-muted); }
 .meta { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; font-size: .88rem; margin: .5rem 0; }

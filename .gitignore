@@ -52,6 +52,8 @@ desktop.ini
 *.swp
 *.swo
 *~
+# Office lock files, created while a document is open
+~$*
 
 # ---- Logs and scratch ----
 *.log
@@ -70,3 +72,4 @@ tmp/
 # Tutor feedback, datasets, diagrams and submitted work are portfolio evidence
 # and must stay tracked. Check `git check-ignore -v <path>` before assuming a
 # missing file is your mistake — it may be a global rule.
+artefacts/intelligent-agents/agent-system/*.pptx

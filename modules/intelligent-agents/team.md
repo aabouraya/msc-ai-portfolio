@@ -129,16 +129,27 @@ the main reason four meetings were enough.
 
 ## Team output
 
-The four meetings produced three artefacts: the high-level design, the system
-requirements specification, and the Blackboard interaction flow diagrams.
+The four meetings produced one deliverable, the team's design proposal
+**ScholarPlan: An LLM-Powered Planning Agent for Academic Research and
+Information Gathering**, submitted for the Development Team Project in September
+2026. It is reproduced in full on the
+[Artefacts](../artefacts/#scholarplan--team-design-proposal) page.
 
-<div class="todo" markdown="1">
-None of the three documents are in this repository yet. Add them under
-[Artefacts](../artefacts/) — the HLD and requirements specification as files, the
-Blackboard interaction flows as images — and link them from here. The minutes
-establish that they exist and who produced them; the documents themselves are
-what evidence LO1–LO3.
-</div>
+ScholarPlan is a hybrid multi-agent system. A deliberative LLM Planner breaks a
+research goal into subtasks using a ReAct loop. Four reactive agents (Retriever,
+Processor, Critic and Archivist) act on those subtasks. Agents never call each
+other; they coordinate only through a shared SQLite blackboard. When the Critic
+rejects a summary, it writes feedback that the Planner reads before its next
+step.
+
+Each part of the proposal traces back to a meeting in the log above:
+
+| Part of the proposal | Where it was produced | Owner, as minuted |
+| --- | --- | --- |
+| Agent roles and the multi-agent justification (§3) | Meeting 1 | Me |
+| High-level design and architecture view (§3, Figure 1) | Meetings 2–4 | Yasmin, co-presented with me in Meeting 2 |
+| Requirements, assumptions, tools and development approach (§2, §4, §6) | Meetings 3–4 | Adel A., co-authored with me in Meeting 3 |
+| Blackboard interaction flows (Figures 2 and 3) | Meeting 4 | Me |
 
 ### My contribution
 
