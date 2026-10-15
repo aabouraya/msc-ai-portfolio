@@ -28,8 +28,8 @@ below. This part is my individual work.
 - **Code:** [github.com/aabouraya/scholar_plan](https://github.com/aabouraya/scholar_plan/tree/c66190e),
   pinned to commit `c66190e`, the version presented. The repository includes the
   tests, evaluation runs, a development log and a remediation log.
-- **Presentation:** [slide deck](https://github.com/aabouraya/msc-ai-portfolio/raw/master/artefacts/intelligent-agents/agent-system/ScholarPlan_IntelligentAgents_slides.pptx)
-  (11 slides, 24 MB download). The submitted version was narrated; this copy has
+- **Presentation:** [slide deck](https://docs.google.com/presentation/d/1cRRCG0g3pqrjCc7xxqDpI_tBM-J0sCwP/edit?usp=sharing)
+  (11 slides, on Google Drive). The submitted version was narrated; this copy has
   the narration removed to keep it small. Slide 6 holds the demo, a screen
   recording of a real run.
 

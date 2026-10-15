@@ -3,11 +3,11 @@
 The presentation for the Intelligent Agents individual project: ScholarPlan, an
 LLM-powered multi-agent planning system for academic research.
 
-| File | What it is |
-| --- | --- |
-| `ScholarPlan_IntelligentAgents_slides.pptx` | The slide deck (11 slides), with the demo screen recording on slide 6 |
+The slide deck (11 slides, with the demo screen recording on slide 6) is on
+[Google Drive](https://docs.google.com/presentation/d/1cRRCG0g3pqrjCc7xxqDpI_tBM-J0sCwP/edit?usp=sharing).
+At 24 MB it is too large to keep in this repository.
 
-The submitted deck was narrated. This copy has the narration removed (the audio
+The submitted deck was narrated. The Drive copy has the narration removed (the audio
 on each slide and the camera recording on slide 1), and slides advance on click
 instead of on the recorded timings. The slide content is unchanged.
 
