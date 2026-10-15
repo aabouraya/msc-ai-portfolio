@@ -39,14 +39,6 @@ is the map — it is what a reader should be able to check the portfolio against
 | Professional skills matrix and PDP | [Skills &amp; PDP](skills/) | LO4 | Draft |
 | Reflective piece | [Reflection](reflection/) | LO1–LO4 | Draft |
 
-<div class="todo" markdown="1">
-Update the **Status** column as you go (`Not started` → `Draft` → `Complete`),
-and add rows for anything you produce that is not listed — seminar preparation,
-reading notes, code experiments. The requirement is not just to include
-artefacts but to *show how they relate to the learning outcomes*, which is what
-the **Evidences** column does.
-</div>
-
 ## Skills targeted in this module
 
 {% for skill in mod.skills %}- {{ skill }}

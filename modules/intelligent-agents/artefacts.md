@@ -713,8 +713,3 @@ S
   better grammar. This is the same failure mode as an agent that parses an
   instruction correctly and still grounds it to the wrong referent.
 
-<div class="todo" markdown="1">
-Add the remaining weekly formative activities as `### Week N — …` sections above,
-each with its badge and the outcomes it evidences. If they grow past a handful,
-move them to a page of their own.
-</div>

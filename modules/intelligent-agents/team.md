@@ -195,9 +195,5 @@ plainly because it is the part I controlled:
 - **They were written up late.** All four were posted on 1 September, after the
   last meeting, rather than after each one. That is why they read as agendas.
 
-<div class="todo" markdown="1">
-**Carry into the [PDP](../skills/):** adopt a decision-and-owner format for
-minutes — *decision, owner, due date* — and write them up within a day of the
-meeting. Then reflect on the team process in the
-[Reflection](../reflection/) piece, where the word limit applies.
-</div>
+Recording decisions and owners is now objective 2 in my [PDP](../skills/#action-plan).
+

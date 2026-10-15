@@ -68,8 +68,3 @@ module column at the end of that module.
 Objectives 1–4 come from Intelligent Agents; the evidence behind each is on the
 [module action plan]({{ '/modules/intelligent-agents/skills/' | relative_url }}#action-plan).
 
-<div class="todo" markdown="1">
-Keep this to three or four live objectives. Close them off explicitly rather
-than deleting the row — the record of what you closed and when is itself
-evidence of critical reflection.
-</div>

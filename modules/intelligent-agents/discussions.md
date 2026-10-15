@@ -371,21 +371,43 @@ Oversight 2026', *OneReach.ai*. Available at:
 - Arguing this twice in one day, in two different domains, is what turned it from
   an opinion into the position I took in my summary post.
 
-<div class="todo" markdown="1">
-**Two fixes to carry forward.**
+### Referencing corrections
 
-1. Both of my own thread posts set the Mohajeri Parizi et al. (2019) entry in
-   APA (ampersand, year after the names, no quotation marks) while every other
-   entry is UoE Harvard.
-2. In the response to Luis, two entries give an arXiv link whose identifier
-   encodes a date that cannot match the publication cited — `2507.19043` is
-   July 2025 against a 2024 journal article, and `2404.08189` is April 2024
-   against a 2026 one. Cite the version actually read, and use the publisher DOI
-   when citing the journal version.
+The posts above are reproduced verbatim, so their errors are left in place and
+corrected here. Reviewing them for this portfolio, I found two:
 
-Everything above is reproduced verbatim because it is a transcript, so correct
-the style in future submissions rather than editing the record.
+1. Both of my own thread posts set the Mohajeri Parizi *et al.* (2019) entry in
+   APA style (ampersand, no quotation marks, no editors) while every other entry
+   is UoE Harvard.
+2. In my response to Luis, two journal articles are linked to arXiv pages that
+   are not the versions cited. One identifier dates from 2025 for a 2024 article,
+   the other from 2024 for a 2026 one. The publisher DOI should have been used.
+
+The corrected entries, checked against Crossref:
+
+<div class="references" markdown="1">
+
+Bi, M., Kovalenko, I., Tilbury, D.M. and Barton, K. (2024) ‘Dynamic distributed
+decision-making for resilient resource reallocation in disrupted manufacturing
+systems’, *International Journal of Production Research*, 62(5), pp. 1737–1757.
+Available at: <https://doi.org/10.1080/00207543.2023.2200567> (Accessed: 15
+October 2026).
+
+Mohajeri Parizi, M., Sileno, G. and van Engers, T. (2019) ‘Integrating CP-nets
+in reactive BDI agents’, in Baldoni, M., Dastani, M., Liao, B., Sakurai, Y. and
+Zalila Wenkstern, R. (eds) *PRIMA 2019: Principles and Practice of Multi-Agent
+Systems*. Lecture Notes in Computer Science. Cham: Springer, pp. 305–320.
+Available at: <https://doi.org/10.1007/978-3-030-33792-6_19> (Accessed: 15
+October 2026).
+
+Tikka, P., Karjalainen, J., Alesani, A. and Goriachev, V. (2026) ‘Large language
+model hallucination mitigation in three industrial use cases’, *IEEE Access*,
+14, pp. 25564–25576. Available at: <https://doi.org/10.1109/ACCESS.2026.3659997>
+(Accessed: 15 October 2026).
+
 </div>
+
+Consistent referencing is objective 3 in my [PDP](../skills/#action-plan).
 
 ## Discussion 3 — Deep learning and the ethics of generative AI
 
@@ -681,3 +703,31 @@ show text was generated, but its *absence* cannot prove human authorship.
 - Isaac and Yasmin both ended on accountability. Assigning responsibility to
   developers and deploying organisations is a design decision, made before
   deployment, not something to settle after an incident.
+
+### Referencing corrections
+
+As in Discussion 1, the posts are left verbatim and corrected here. In my
+initial post, the two entries are in a library-catalogue style rather than UoE
+Harvard: no quotation marks, an "[Online]" tag and no DOI. In my response to
+Isaac, the Kirchenbauer *et al.* (2023) entry cites the ICML proceedings but
+links the arXiv preprint. The corrected entries:
+
+<div class="references" markdown="1">
+
+Buick, A. (2025) ‘Copyright and AI training data—transparency to the rescue?’,
+*Journal of Intellectual Property Law & Practice*, 20(3), pp. 182–192. Available
+at: <https://doi.org/10.1093/jiplp/jpae102> (Accessed: 15 October 2026).
+
+Kirchenbauer, J., Geiping, J., Wen, Y., Katz, J., Miers, I. and Goldstein, T.
+(2023) ‘A watermark for large language models’, in *Proceedings of the 40th
+International Conference on Machine Learning (ICML 2023)*. Honolulu: PMLR 202,
+pp. 17061–17084. Available at:
+<https://proceedings.mlr.press/v202/kirchenbauer23a.html> (Accessed: 15 October
+2026).
+
+Romero Moreno, F. (2024) ‘Generative AI and deepfakes: a human rights approach
+to tackling harmful content’, *International Review of Law, Computers &
+Technology*, 38(3), pp. 297–326. Available at:
+<https://doi.org/10.1080/13600869.2024.2324540> (Accessed: 15 October 2026).
+
+</div>
