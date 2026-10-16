@@ -9,7 +9,7 @@ summary: >-
   full response to each improvement point.
 ---
 
-Appendix to the [Feedback](../../feedback/) page.
+Supporting evidence for the [Project evaluation](../../evaluation/).
 
 ## Tutor feedback
 

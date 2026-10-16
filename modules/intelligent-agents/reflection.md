@@ -2,7 +2,7 @@
 title: Reflective Piece
 short_title: Reflection
 module: intelligent-agents
-nav_order: 8
+nav_order: 6
 permalink: /modules/intelligent-agents/reflection/
 summary: >-
   Reflection on the module as a whole, covering all four learning outcomes,
@@ -114,8 +114,6 @@ Four changes follow.
    not at the deadline. I will write minutes as decision, owner and due date
    within a day of each meeting. I also want to handle late disagreements more
    formally and calmly.
-
-These actions are tracked in my [PDP](../skills/#action-plan).
 
 ## References
 

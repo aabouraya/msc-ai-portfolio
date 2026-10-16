@@ -29,6 +29,13 @@ exclude:
   - .jekyll-cache
   # Source code and raw artefacts are browsed on GitHub, not rendered as pages.
   - artefacts
+  # Not part of the Intelligent Agents submission; kept for later modules.
+  - about.md
+  - skills.md
+  - modules/index.md
+  - modules/machine-learning
+  - modules/knowledge-representation-and-reasoning
+  - modules/research-methods-and-professional-practice
 
 defaults:
   - scope:
@@ -38,11 +45,5 @@ defaults:
 
 # Top-level navigation.
 nav:
-  - title: Home
-    url: /
-  - title: Modules
-    url: /modules/
-  - title: Skills & PDP
-    url: /skills/
-  - title: About
-    url: /about/
+  - title: Intelligent Agents
+    url: /modules/intelligent-agents/

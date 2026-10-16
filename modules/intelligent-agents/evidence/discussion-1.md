@@ -362,5 +362,3 @@ model hallucination mitigation in three industrial use cases’, *IEEE Access*,
 (Accessed: 15 October 2026).
 
 </div>
-
-Consistent referencing is objective 3 in my [PDP](../../skills/#action-plan).

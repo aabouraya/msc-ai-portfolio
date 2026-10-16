@@ -2,7 +2,7 @@
 title: Team Exercises
 short_title: Team
 module: intelligent-agents
-nav_order: 2
+nav_order: 3
 permalink: /modules/intelligent-agents/team/
 summary: >-
   The team design project: meetings, my contribution, and what worked.
@@ -65,5 +65,3 @@ exchange state. Yasmin owned the structure and Adel A. the requirements.
 | **Did not** | All four minutes were posted on 1 September, after the last meeting | I wrote them up at the end, not after each meeting |
 
 </div>
-
-Recording decisions and owners is now objective 2 in my [PDP](../skills/#action-plan).

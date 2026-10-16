@@ -2,7 +2,7 @@
 title: Collaborative Discussions
 short_title: Discussions
 module: intelligent-agents
-nav_order: 1
+nav_order: 2
 permalink: /modules/intelligent-agents/discussions/
 summary: >-
   My posts in the collaborative discussion forum, and what each exchange changed
@@ -33,7 +33,7 @@ maps each exchange to what it changed in my thinking.
 | Kapinga D. on my post: more autonomy does not mean more trust | Governance has to be explicit: human oversight, monitoring and defined operational boundaries |
 | My response to Luis T. | Every fix carries its own failure mode. An LLM that removes a usability barrier introduces hallucination. Reaching the same trade-off from manufacturing made me treat it as general |
 | My response to Khadijah H. | The useful question is not *how* autonomous but autonomous *over what*. An agent cannot be held answerable, so responsibility stays with whoever deploys it |
-| Reviewing the thread for this portfolio | Two referencing errors, corrected at the end of the evidence page. Consistent referencing is objective 3 in my [PDP](../skills/#action-plan) |
+| Reviewing the thread for this portfolio | Two referencing errors, corrected at the end of the evidence page. |
 
 </div>
 
@@ -54,7 +54,7 @@ maps each exchange to what it changed in my thinking.
 | Exchange | What it changed in my thinking |
 | --- | --- |
 | Lara K. on my post: I had conflated the *use* of deepfakes in elections with evidence that they *changed* results | I overstated the evidence, and my summary post corrects it. The more defensible harm is erosion of trust in authentic information |
-| Isaac S. on my post: safeguards at specific points in the lifecycle | "Careful oversight" was a conclusion with no mechanism. It became checks at data collection, model evaluation and distribution. The tutor made the same point about the team design ([pattern](../feedback/#patterns)) |
+| Isaac S. on my post: safeguards at specific points in the lifecycle | "Careful oversight" was a conclusion with no mechanism. It became checks at data collection, model evaluation and distribution. The tutor made the same point about the team design ([tutor feedback](../evidence/tutor-feedback/)) |
 | My response to Isaac S.: the engineering trade-offs of watermarking | Naming the cost of a proposal moved the thread more than agreeing with it, and Isaac's summary built on my point. A watermark can confirm machine generation but never human authorship |
 | Reviewing the thread for this portfolio | Three referencing errors, corrected at the end of the evidence page |
 

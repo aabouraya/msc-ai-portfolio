@@ -1,7 +1,7 @@
 ---
 title: Artefacts
 module: intelligent-agents
-nav_order: 3
+nav_order: 1
 permalink: /modules/intelligent-agents/artefacts/
 summary: >-
   Code, designs, diagrams and written work produced during the module, each
@@ -113,7 +113,7 @@ uv run scholarplan search runs/<timestamp> "why scale the dot product"   # offli
 ### ScholarPlan — team design proposal
 
 - **Full proposal, verbatim:** [ScholarPlan team design proposal](../evidence/team-proposal/) (Group A, September 2026)
-- **Who did what:** [Team](../team/#team-output) · **Tutor feedback:** [Feedback](../feedback/)
+- **Who did what:** [Team](../team/#team-output) · **Tutor feedback:** [evidence appendix](../evidence/tutor-feedback/)
 
 | The brief asks the agents to… | ScholarPlan agent | Where in the proposal |
 | --- | --- | --- |

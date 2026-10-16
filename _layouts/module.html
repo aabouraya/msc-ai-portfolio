@@ -11,7 +11,7 @@ layout: default
 {%- assign siblings = site.pages | where: "module", page.module | where_exp: "p", "p.nav_exclude != true" | sort: "nav_order" -%}
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <a href="{{ '/modules/' | relative_url }}">Modules</a>
+  <a href="{{ '/' | relative_url }}">Home</a>
   <span aria-hidden="true">/</span>
   {%- if page.nav_order == 0 -%}
     <span>{{ mod.title }}</span>
