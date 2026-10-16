@@ -22,8 +22,10 @@ it full size.
 - **Reliability is an architecture problem, not only a model problem.** Isaac's
   three controls showed that errors spread at the handoffs between agents, so
   that is where verification belongs. It became the Critic in ScholarPlan.
-- **Autonomy does not create trust.** Kapinga's reply made the case that
-  governance has to be designed in: oversight, monitoring and clear boundaries.
+- **Autonomy has to be bounded.** Kapinga argued that governance must be
+  designed in. In Khadijah's thread I argued that agents still need human
+  oversight, and Panagiotis made it precise: an agent's independence should match
+  the cost of its failure.
 - **Every fix has its own failure mode.** In Luis's thread, adding an LLM to
   remove a usability barrier introduced hallucination. The thread ended on
   central governance with decentralised execution, the hybrid ScholarPlan uses.
@@ -41,7 +43,11 @@ it full size.
   </a>
   <a class="shot" href="{{ '/assets/img/intelligent-agents/discussions/d1-peer-response.png' | relative_url }}">
     <img src="{{ '/assets/img/intelligent-agents/discussions/d1-peer-response.png' | relative_url }}" alt="Forum screenshot: Luis T.'s post on multi-agent systems in manufacturing, my response, and the replies that followed." loading="lazy">
-    <span class="shot-text"><span class="shot-title">My response to a peer</span><span class="shot-meta">9 Aug 2026 · in Luis T.'s thread on manufacturing</span><span class="shot-open">Open full size →</span></span>
+    <span class="shot-text"><span class="shot-title">My response to Luis T.</span><span class="shot-meta">9 Aug 2026 · multi-agent systems in manufacturing</span><span class="shot-open">Open full size →</span></span>
+  </a>
+  <a class="shot" href="{{ '/assets/img/intelligent-agents/discussions/d1-peer-response-2.png' | relative_url }}">
+    <img src="{{ '/assets/img/intelligent-agents/discussions/d1-peer-response-2.png' | relative_url }}" alt="Forum screenshot: Khadijah H.'s post on the rise of intelligent agents, my response, and replies from Panagiotis M. and Imoh E." loading="lazy">
+    <span class="shot-text"><span class="shot-title">My response to Khadijah H.</span><span class="shot-meta">9 Aug 2026 · the rise of intelligent agents</span><span class="shot-open">Open full size →</span></span>
   </a>
 </div>
 
@@ -75,6 +81,6 @@ it full size.
   </a>
   <a class="shot" href="{{ '/assets/img/intelligent-agents/discussions/d3-peer-response.png' | relative_url }}">
     <img src="{{ '/assets/img/intelligent-agents/discussions/d3-peer-response.png' | relative_url }}" alt="Forum screenshot: Isaac S.'s post, my response, Yasmin A.'s response and Isaac's summary." loading="lazy">
-    <span class="shot-text"><span class="shot-title">My response to a peer</span><span class="shot-meta">4 Oct 2026 · in Isaac S.'s thread</span><span class="shot-open">Open full size →</span></span>
+    <span class="shot-text"><span class="shot-title">My response to Isaac S.</span><span class="shot-meta">4 Oct 2026 · content, source and accountability</span><span class="shot-open">Open full size →</span></span>
   </a>
 </div>
