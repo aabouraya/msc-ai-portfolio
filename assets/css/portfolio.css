@@ -157,9 +157,63 @@ main figure { margin: 1.25rem 0; }
 main figure img { display: block; background: #fff; border: 1px solid var(--border); }
 main figcaption { margin-top: .5rem; font-size: .88rem; color: var(--text-muted); }
 
-/* Tall forum screenshots scroll inside a frame instead of filling the page. */
-.screenshot { max-height: 36rem; overflow-y: auto; border: 1px solid var(--border); }
-.screenshot img { width: 100%; border: 0; }
+/* ---------- Discussions: takeaways and post cards ---------- */
+
+/* The reflective takeaway of a discussion, set apart from the evidence below. */
+.learned {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  padding: 1rem 1.25rem;
+}
+.learned-title {
+  margin: 0 0 .5rem;
+  font-size: .8rem;
+  font-weight: 650;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.learned ul { margin: 0; padding-left: 1.1rem; }
+.prose > .learned { grid-column: 1 / -1; margin: 0 0 1.25rem; }
+
+/* One card per forum post: the top of the screenshot as a preview, and the
+   full-size image a click away. Spans the whole content width. */
+.prose > .shots {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 0 0 1.25rem;
+}
+.shot {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.shot:hover, .shot:focus-visible { border-color: var(--accent); box-shadow: 0 2px 12px rgba(0, 0, 0, .08); }
+main .shot img {
+  display: block;
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  object-position: top;
+  background: #fff;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+}
+.shot-text { padding: .75rem .9rem .85rem; }
+.shot-title { display: block; font-weight: 650; line-height: 1.35; }
+.shot-meta { display: block; margin-top: .2rem; font-size: .85rem; color: var(--text-muted); }
+.shot-open { display: block; margin-top: .45rem; font-size: .82rem; color: var(--accent); }
 
 .muted { color: var(--text-muted); }
 .meta { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; font-size: .88rem; margin: .5rem 0; }

@@ -15,7 +15,7 @@ _config.yml                  site config, top nav
 _data/modules.yml            module metadata: status, learning outcomes, skills
 _layouts/                    default, page, module
 _includes/module-cards.html  module card grid, used on Home and Modules
-assets/css/style.css         the whole theme (light + dark)
+assets/css/portfolio.css         the whole theme (light + dark)
 assets/img/<module>/         diagrams and screenshots
 index.md  modules/  skills.md  about.md
 modules/<module>/            one page per portfolio section
