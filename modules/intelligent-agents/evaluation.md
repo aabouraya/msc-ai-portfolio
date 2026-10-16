@@ -11,9 +11,8 @@ summary: >-
 
 <p class="meta"><span class="muted">Evidences LO1, LO2, LO3</span></p>
 
-This page judges the [team design proposal](../artefacts/#scholarplan--team-design-proposal)
-against what my [implementation](../artefacts/#agent-based-system) showed when it
-was built and tested.
+This page judges the [team design](../artefacts/#scholarplan--team-design-proposal)
+against my [implementation](../artefacts/#agent-based-system).
 
 ## What the design got right
 

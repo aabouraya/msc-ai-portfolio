@@ -5,20 +5,11 @@ module: intelligent-agents
 nav_order: 2
 permalink: /modules/intelligent-agents/team/
 summary: >-
-  Outputs from the team exercises, role allocation and meeting notes.
+  The team design project: meetings, my contribution, and what worked.
   Evidences LO1–LO4.
 ---
 
-The team project is the design of a multi-agent system: cooperating specialised
-agents rather than one monolithic program, with an LLM handling goal
-decomposition and re-planning. Four design meetings ran from 6 to 29 August 2026,
-producing a high-level design, a system requirements specification, and the
-interaction flows for agent communication.
-
-I took the minutes for all four meetings and posted them to the module forum on
-1 September 2026. They are reproduced verbatim below, with one disclosed change:
-team members' surnames are reduced to an initial, for consistency with how peers
-are identified elsewhere in this portfolio.
+Full minutes, which I wrote: [evidence appendix](../evidence/meeting-minutes/).
 
 ## Meeting log
 
@@ -33,116 +24,9 @@ are identified elsewhere in this portfolio.
 
 </div>
 
-The design moved in one direction across the four meetings: concept and
-governance first, then a draft design, then consolidation, then a finalised
-design plus the interaction detail. Nothing was reopened once agreed, which is
-the main reason four meetings were enough.
-
-### Meeting 1 — Initial Architecture Brainstorming &amp; Governance
-
-<p class="post-meta">6 August 2026 · minuted by me</p>
-
-<div class="post" markdown="1">
-
-- **Date:** August 6, 2026
-- **Attendees:** Ahmed Abou Raya, Yasmin
-
-**Agenda &amp; Discussion Points**
-
-1. **Team Governance:** Reviewed and established the core team contract.
-2. **Multi-Agent Concept &amp; Responsibilities:**
-   - Defined initial agent roles and individual responsibilities within the
-     architecture.
-   - Justified the multi-agent approach (cooperating specialized agents vs. a
-     single monolithic program) to ensure modularity, scalability, and robust
-     task separation.
-
-**LLM Planning Mechanisms:**
-
-- Evaluated how the LLM will manage dynamic goal decomposition into discrete
-  subtasks.
-- Defined handling mechanisms for dynamic re-planning when a subtask encounters
-  failure or exceptions.
-
-</div>
-
-### Meeting 2 — High-Level Design Draft &amp; Scope Definition
-
-<p class="post-meta">14 August 2026 · minuted by me</p>
-
-<div class="post" markdown="1">
-
-- **Date:** August 14, 2026
-- **Attendees:** Ahmed Abou Raya, Yasmin, Adel A.
-
-**Agenda &amp; Discussion Points**
-
-1. **HLD Review:** Ahmed and Yasmin presented an initial high-level design (HLD)
-   draft reflecting concepts discussed during Meeting 1.
-2. **Requirements &amp; Tooling Scoping:**
-   - Welcomed Adel A. to the architectural discussions.
-   - Brainstormed next steps for defining comprehensive System Requirements,
-     selecting target tools/frameworks, and setting up the project methodology.
-
-</div>
-
-### Meeting 3 — Draft Consolidation &amp; Alignment
-
-<p class="post-meta">24 August 2026 · minuted by me</p>
-
-<div class="post" markdown="1">
-
-- **Date:** August 24, 2026
-- **Attendees:** Ahmed Abou Raya, Yasmin, Adel A.
-
-**Agenda &amp; Discussion Points**
-
-1. **System Requirements &amp; Methodology Draft:** Ahmed and Adel prepared and
-   presented a draft outlining system requirements, execution tools, and
-   development methods.
-2. **Consolidated High-Level Design:** Yasmin presented a consolidated version of
-   the High-Level Design document, integrating updates and feedback from prior
-   sessions.
-
-</div>
-
-### Meeting 4 — Finalize high system design and system requirements
-
-<p class="post-meta">29 August 2026 · minuted by me</p>
-
-<div class="post" markdown="1">
-
-- **Date:** August 29, 2026
-- **Attendees:** Ahmed Abou Raya, Yasmin, Adel A.
-
-**Agenda &amp; Discussion Points**
-
-1. **Consolidated System Requirements:** Adel presented the standardized and
-   finalized system requirements derived from previous drafts.
-2. **Visual High-Level Design (HLD):** Yasmin shared a newly formatted, visual
-   version of the High-Level Design featuring structured architectural diagrams.
-3. **Blackboard Interaction Flow:** Ahmed presented detailed interaction flow
-   diagrams illustrating the Blackboard architecture pattern for agent
-   communication and state sharing.
-
-</div>
-
 ## Team output
 
-The four meetings produced one deliverable, the team's design proposal
-**ScholarPlan: An LLM-Powered Planning Agent for Academic Research and
-Information Gathering**, submitted for the Development Team Project in September
-2026. It is reproduced in full on the
-[Artefacts](../artefacts/#scholarplan--team-design-proposal) page.
-
-ScholarPlan is a hybrid multi-agent system. A deliberative LLM Planner breaks a
-research goal into subtasks using a ReAct loop. Four reactive agents (Retriever,
-Processor, Critic and Archivist) act on those subtasks. Agents never call each
-other; they coordinate only through a shared SQLite blackboard. When the Critic
-rejects a summary, it writes feedback that the Planner reads before its next
-step.
-
-Each part of the proposal traces back to a meeting in the log above:
+Full proposal (September 2026): [evidence appendix](../evidence/team-proposal/).
 
 | Part of the proposal | Where it was produced | Owner, as minuted |
 | --- | --- | --- |
@@ -151,49 +35,35 @@ Each part of the proposal traces back to a meeting in the log above:
 | Requirements, assumptions, tools and development approach (§2, §4, §6) | Meetings 3–4 | Adel A., co-authored with me in Meeting 3 |
 | Blackboard interaction flows (Figures 2 and 3) | Meeting 4 | Me |
 
-### My contribution
+## My contribution
 
-Taken from the minutes rather than from memory:
+<div class="wide" markdown="1">
 
-- **Agent roles and the multi-agent justification** (Meeting 1) — arguing
-  cooperating specialised agents over a single monolithic program, on modularity,
-  scalability and task separation.
-- **LLM planning and failure handling** (Meeting 1) — how goals decompose into
-  discrete subtasks, and what happens when a subtask fails or raises an
-  exception.
-- **The first HLD draft** (Meeting 2), co-presented with Yasmin.
-- **System requirements, execution tools and development methods draft**
-  (Meeting 3), co-authored with Adel A.
-- **Blackboard interaction flow diagrams** (Meeting 4) — how agents communicate
-  and share state through a common blackboard.
-- **Minutes for all four meetings**, written and posted to the forum.
+| What I did | When | Where it ended up |
+| --- | --- | --- |
+| Argued for cooperating specialised agents over one monolithic program, on modularity, scalability and task separation | Meeting 1 | Proposal §3 |
+| Worked out how goals break into subtasks, and what happens when one fails | Meeting 1 | Proposal §3; the re-planning loop in my [implementation](../evidence/scholarplan-implementation/#how-it-works) |
+| Co-presented the first high-level design draft | Meeting 2 | Proposal Figure 1 |
+| Co-authored the requirements, execution tools and development methods draft | Meeting 3 | Proposal §2, §4, §6 |
+| Drew the blackboard interaction flows: how agents share state | Meeting 4 | Proposal Figures 2 and 3 |
+| Wrote and posted the minutes for all four meetings | 1 Sep 2026 | [Minutes](../evidence/meeting-minutes/) |
 
-The through-line is the *dynamics* of the system rather than its static
-structure: how a goal becomes subtasks, what happens when one fails, and how
-agents exchange state. Yasmin owned the structural view (the HLD and its visual
-form) and Adel A. owned the requirements specification.
+</div>
+
+My focus was the system's *dynamics*: how a goal becomes subtasks and how agents
+exchange state. Yasmin owned the structure and Adel A. the requirements.
 
 ## What worked and what did not
 
-**What worked.** Two things, both visible in the record:
+<div class="wide" markdown="1">
 
-- **Meetings built on each other rather than revisiting.** Meeting 1 settled the
-  concept, 2 drafted, 3 consolidated, 4 finalised. Agreeing the team contract
-  before any design work is the most likely reason this held.
-- **Work split along interests and stayed there.** Structure, requirements and
-  dynamics each had a clear owner, so consolidation was merging rather than
-  reconciling.
+| | What happened | Why |
+| --- | --- | --- |
+| **Worked** | Each meeting built on the last: concept, then draft, then consolidation, then final. Nothing was reopened | The team contract was agreed before any design work |
+| **Worked** | Work split by interest and stayed split. Consolidation meant merging, not reconciling | Structure, requirements and dynamics each had one owner |
+| **Did not** | My minutes record what was discussed, not what was decided, who owns the follow-up, or by when | I wrote them as agendas |
+| **Did not** | All four minutes were posted on 1 September, after the last meeting | I wrote them up at the end, not after each meeting |
 
-**What did not.** One weakness in my own record-keeping, which is worth stating
-plainly because it is the part I controlled:
-
-- **The minutes record discussion, not decisions.** They say what was covered and
-  who presented, but never *what was agreed*, who owned the follow-up, or by
-  when. Meeting 1 "evaluated" LLM planning mechanisms and "defined" handling
-  mechanisms without saying what was settled. For a four-meeting project with
-  three people that was recoverable; on anything larger it would not be.
-- **They were written up late.** All four were posted on 1 September, after the
-  last meeting, rather than after each one. That is why they read as agendas.
+</div>
 
 Recording decisions and owners is now objective 2 in my [PDP](../skills/#action-plan).
-

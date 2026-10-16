@@ -4,10 +4,11 @@ layout: default
 {%- comment -%}
   Pages under modules/<slug>/ set `module: <slug>` in front matter. This layout
   looks the module up in _data/modules.yml and builds a sub-navigation from its
-  sibling pages, ordered by `nav_order`.
+  sibling pages, ordered by `nav_order`. Pages with `nav_exclude: true` (the
+  evidence appendix pages) are reachable by link but left out of the sub-navigation.
 {%- endcomment -%}
 {%- assign mod = site.data.modules | where: "slug", page.module | first -%}
-{%- assign siblings = site.pages | where: "module", page.module | sort: "nav_order" -%}
+{%- assign siblings = site.pages | where: "module", page.module | where_exp: "p", "p.nav_exclude != true" | sort: "nav_order" -%}
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <a href="{{ '/modules/' | relative_url }}">Modules</a>

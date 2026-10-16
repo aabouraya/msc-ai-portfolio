@@ -1,7 +1,14 @@
-# Discussion 1 — Agent-Based Systems in contemporary organisations
+---
+title: "Appendix: Discussion 1 — Agent-Based Systems in contemporary organisations"
+short_title: Discussion 1
+module: intelligent-agents
+nav_exclude: true
+permalink: /modules/intelligent-agents/evidence/discussion-1/
+summary: >-
+  The full thread, reproduced verbatim from the module forum.
+---
 
-Collaborative discussion, Intelligent Agents module, 5–16 August 2026. Evidence for the
-[Discussions](https://aabouraya.github.io/msc-ai-portfolio/modules/intelligent-agents/discussions/) page of my e-portfolio.
+Appendix to the [Discussions](../../discussions/) page · 5–16 August 2026.
 
 My posts are reproduced verbatim from the module forum, including their original
 references; corrections are listed at the end. The summaries of other students'
@@ -356,4 +363,4 @@ model hallucination mitigation in three industrial use cases’, *IEEE Access*,
 
 </div>
 
-Consistent referencing is objective 3 in my [PDP](https://aabouraya.github.io/msc-ai-portfolio/modules/intelligent-agents/skills/#action-plan).
+Consistent referencing is objective 3 in my [PDP](../../skills/#action-plan).

@@ -19,7 +19,13 @@ happened, what it means, and what I will do differently.
 I started the module assuming that a capable large language model (LLM) could
 plan a multi-step task and check its own output. I tested that assumption twice:
 first as one of three active members of a team designing ScholarPlan, a
-multi-agent research assistant, and then alone, building and evaluating it. Two
+multi-agent research assistant, and then alone, building and evaluating it.
+
+In the team, my contribution was the system's dynamics rather than its
+structure. I defined the agent roles and argued for a multi-agent design. I
+worked out how the LLM would break goals into subtasks and what would happen
+when one failed. I drew the blackboard interaction flows, and I wrote the
+minutes for all four meetings ([team page](../team/#my-contribution)). Two
 incidents shaped my learning most.
 
 The first came in the team phase. One of our four members signed the team
@@ -71,8 +77,9 @@ The team incident taught the same lesson at another level. Our design split the
 system into agents with clear responsibilities. Because of that, the missing
 member's task had clear boundaries and could be reassigned without reworking the
 rest. A loosely coupled team, like a blackboard system (Wooldridge, 2009), can
-survive the failure of one part. I had seen modularity as a software quality; I
-now see it as risk management for teams too.
+survive the failure of one part. My background in software engineering design is
+why I pushed for clear task boundaries from the first meeting. I had seen
+modularity as a software quality; I now see it as risk management for teams too.
 
 Research on social loafing suggests that shared, unclear responsibility invites
 withdrawal (Latané, Williams and Harkins, 1979). Our team contract, with named

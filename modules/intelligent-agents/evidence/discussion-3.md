@@ -1,7 +1,14 @@
-# Discussion 3 — Deep learning and the ethics of generative AI
+---
+title: "Appendix: Discussion 3 — Deep learning and the ethics of generative AI"
+short_title: Discussion 3
+module: intelligent-agents
+nav_exclude: true
+permalink: /modules/intelligent-agents/evidence/discussion-3/
+summary: >-
+  The full thread, reproduced verbatim from the module forum.
+---
 
-Collaborative discussion, Intelligent Agents module, 30 September – 13 October 2026. Evidence for the
-[Discussions](https://aabouraya.github.io/msc-ai-portfolio/modules/intelligent-agents/discussions/) page of my e-portfolio.
+Appendix to the [Discussions](../../discussions/) page · 30 September – 13 October 2026.
 
 My posts are reproduced verbatim from the module forum, including their original
 references; corrections are listed at the end. The summaries of other students'

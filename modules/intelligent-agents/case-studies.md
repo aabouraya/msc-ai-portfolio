@@ -12,9 +12,8 @@ summary: >-
 
 <p class="meta"><span class="muted">Evidences LO2, LO3</span></p>
 
-Each case study uses Rolfe, Freshwater and Jasper's (2001) framework: **What**
-happened, **So what** it means, and **Now what** I will do differently. The
-evidence for each is in the ScholarPlan
+Each follows Rolfe, Freshwater and Jasper's (2001) **What**, **So what**, **Now
+what**. Evidence: the ScholarPlan
 [development log](https://github.com/aabouraya/scholar_plan/blob/c66190e/docs/development_log.md),
 [remediation log](https://github.com/aabouraya/scholar_plan/blob/c66190e/docs/remediation_log.md)
 and [test report](https://github.com/aabouraya/scholar_plan/blob/c66190e/docs/testing/test_report.md).

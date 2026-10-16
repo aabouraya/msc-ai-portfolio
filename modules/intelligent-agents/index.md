@@ -13,13 +13,10 @@ summary: >-
 
 ## About this e-portfolio
 
-The module's central project was ScholarPlan, an LLM-powered multi-agent system
-for academic research. Given one research question, it plans its own searches,
-gathers papers from OpenAlex, arXiv and Crossref, has an independent Critic
-check every claim against its source, and writes a cited literature review. It
-was designed as a team project, then built and evaluated by me. That two-phase
-structure runs through the portfolio: what the design promised, what the
-implementation showed, and what I learned from the gap.
+The module's central project was ScholarPlan, a multi-agent system that plans
+its own literature searches, has an independent Critic check every claim against
+its source, and writes a cited review. It was designed by a team, then built and
+evaluated by me.
 
 **Where to start.** The assessed written work is on three pages:
 
@@ -29,15 +26,28 @@ implementation showed, and what I learned from the gap.
 - [Reflection](reflection/): the final reflective piece, also submitted to
   Turnitin.
 
-The other pages hold the supporting evidence, mapped to the learning outcomes in
-the [artefact index](#artefact-index) below. Much of it is reproduced verbatim
-from work assessed earlier in the module: forum posts, meeting minutes and the
-team design proposal.
+The other pages hold supporting evidence, mapped to the learning outcomes
+[below](#artefact-index). Original material (forum posts, minutes, the team
+proposal) is reproduced in the [evidence appendix](evidence/).
 
-**Word count** (prose only, excluding tables, captions and references):
-this Overview 254, Project evaluation 478 and Case studies 632,
-a total of 1,364 against the 1,500-word limit. The Reflection is 851 words
-against its 1,000-word limit.
+**Word count.** Prose only; tables, code, captions and references are excluded.
+
+<!-- wc:start -->
+
+| Page | Words |
+| --- | --: |
+| Overview | 133 |
+| Discussions | 22 |
+| Team | 49 |
+| Artefacts | 132 |
+| Project evaluation | 469 |
+| Case studies | 616 |
+| Feedback | 44 |
+| Skills &amp; PDP | 25 |
+| **Total** (limit 1,500) | **1,490** |
+| [Reflection](reflection/) (limit 1,000) | **928** |
+
+<!-- wc:end -->
 
 ## Learning outcomes
 
@@ -48,9 +58,6 @@ On completion of this module I should be able to:
 {% endfor %}
 
 ## Artefact index
-
-Every artefact in this module maps to at least one learning outcome. This table
-is the map — it is what a reader should be able to check the portfolio against.
 
 | Artefact | Section | Evidences | Status |
 | --- | --- | --- | --- |
@@ -72,6 +79,4 @@ is the map — it is what a reader should be able to check the portfolio against
 {% for skill in mod.skills %}- {{ skill }}
 {% endfor %}
 
-Progress against these is tracked on the [Skills &amp; PDP](skills/) page for this
-module, and rolled up on the programme-level
-[Skills &amp; PDP]({{ '/skills/' | relative_url }}) page.
+Progress: [Skills &amp; PDP](skills/).

@@ -9,22 +9,16 @@ summary: >-
   development action plan.
 ---
 
-Rated 1–5 on the scale defined on the programme
-[Skills &amp; PDP]({{ '/skills/' | relative_url }}) page. The *Evidence* column is
-what makes a rating defensible — a claimed level with nothing to point at is
-just an assertion.
+Rated 1–5 on the programme [scale]({{ '/skills/' | relative_url }}).
 
 ## Skills matrix
-
-Evidence includes what went less well. A rating is easier to defend when the
-evidence shows the weak side too.
 
 <div class="wide" markdown="1">
 
 | Skill | Start | End | Evidence |
 | --- | --- | --- | --- |
 | Time management | – | – | The implementation was built in [four iterations with dated gates](../artefacts/#what-changed-from-the-design), 14 September to 9 October. Against that, [all four sets of minutes were written up late](../team/#what-worked-and-what-did-not), on 1 September |
-| Commercial awareness | – | – | Models were chosen on benchmark and cost within a one-off $100 credit ([proposal §3](../artefacts/#design-decisions)), and a run costs about $0.03 ([results](../artefacts/#results)). [Discussion 1](../discussions/#discussion-1--agent-based-systems-in-contemporary-organisations) covers what agent systems offer organisations, and what they risk |
+| Commercial awareness | – | – | Models were chosen on benchmark and cost within a one-off $100 credit ([proposal §3](../evidence/team-proposal/#design-decisions)), and a run costs about $0.03 ([results](../artefacts/#results)). [Discussion 1](../discussions/#discussion-1--agent-based-systems-in-contemporary-organisations) covers what agent systems offer organisations, and what they risk |
 | Critical thinking and analysis | – | – | [Response to Isaac](../discussions/#discussion-3--deep-learning-and-the-ethics-of-generative-ai) names the engineering trade-offs of watermarking. The [changes from the design](../artefacts/#what-changed-from-the-design) record where the design did not hold. The [limitations](../artefacts/#limitations) report results that did not improve |
 | Communication and literacy skills | – | – | Forum posts in [Discussions](../discussions/), the [team proposal](../artefacts/#scholarplan--team-design-proposal), and the [presentation](../artefacts/#scholarplan--implementation-and-presentation). Against that: inconsistent reference styles in Discussion 1, and a wrong in-text surname in my Discussion 3 initial post |
 | IT and digital | – | – | [ScholarPlan](../artefacts/#agent-based-system): five agents, 67 offline and 3 live tests, and an evaluation harness. Also the [KQML and KIF dialogue](../artefacts/#week-6--creating-agent-dialogues-in-kqml-and-kif) |
@@ -33,7 +27,7 @@ evidence shows the weak side too.
 | Problem-solving | – | – | Test-first fixes for the arXiv ID and Azure timeout bugs, each shown failing and then passing. A new Critic rule for claims stronger or weaker than their source brought it to 13 of 13 correct ([remediation log](https://github.com/aabouraya/scholar_plan/blob/c66190e/docs/remediation_log.md), issues 4, 10 and 11) |
 | Ethical awareness | – | – | [Discussion 3](../discussions/#discussion-3--deep-learning-and-the-ethics-of-generative-ai) on copyright and deepfakes. The [legal, social, ethical and professional considerations](../artefacts/#legal-social-ethical-and-professional-considerations) of ScholarPlan, including disclosure of AI tool use |
 | Teamwork / global citizen and leadership | – | – | [Meeting log](../team/#meeting-log): minutes for all four meetings, co-presenting the design and requirements drafts, and the Blackboard interaction flows ([my contribution](../team/#my-contribution)) |
-| Critical reflection | – | – | "What I learned" sections in each [discussion](../discussions/). [My response to the tutor's feedback](../feedback/#my-response), and the [pattern](../feedback/#patterns) across that feedback, the discussions and the minutes |
+| Critical reflection | – | – | "What I learned" sections in each [discussion](../discussions/). [My response to the tutor's feedback](../evidence/tutor-feedback/#my-response), and the [pattern](../feedback/#patterns) across that feedback, the discussions and the minutes |
 
 </div>
 
@@ -44,8 +38,7 @@ Add your own **Start** and **End** ratings. Rate Start as you were in July
 
 ## Action plan
 
-Each objective comes from a weakness recorded elsewhere in this module. The
-source is linked so the objective can be checked against it.
+Each objective comes from a weakness recorded in this module.
 
 <div class="wide" markdown="1">
 
@@ -60,6 +53,5 @@ source is linked so the objective can be checked against it.
 
 </div>
 
-Close each objective with a dated outcome rather than deleting the row.
-Anything still open at the end of the module carries forward to the programme
+Open objectives carry forward to the programme
 [action plan]({{ '/skills/' | relative_url }}#action-plan).
