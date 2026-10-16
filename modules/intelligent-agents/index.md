@@ -11,6 +11,34 @@ summary: >-
 ---
 {%- assign mod = site.data.modules | where: "slug", "intelligent-agents" | first -%}
 
+## About this e-portfolio
+
+The module's central project was ScholarPlan, an LLM-powered multi-agent system
+for academic research. Given one research question, it plans its own searches,
+gathers papers from OpenAlex, arXiv and Crossref, has an independent Critic
+check every claim against its source, and writes a cited literature review. It
+was designed as a team project, then built and evaluated by me. That two-phase
+structure runs through the portfolio: what the design promised, what the
+implementation showed, and what I learned from the gap.
+
+**Where to start.** The assessed written work is on three pages:
+
+- [Project evaluation](evaluation/): a critical evaluation of the design against
+  the implementation;
+- [Case studies](case-studies/): three reflective case studies;
+- [Reflection](reflection/): the final reflective piece, also submitted to
+  Turnitin.
+
+The other pages hold the supporting evidence, mapped to the learning outcomes in
+the [artefact index](#artefact-index) below. Much of it is reproduced verbatim
+from work assessed earlier in the module: forum posts, meeting minutes and the
+team design proposal.
+
+**Word count** (prose only, excluding tables, captions and references):
+this Overview 254, Project evaluation 478 and Case studies 632,
+a total of 1,364 against the 1,500-word limit. The Reflection is 851 words
+against its 1,000-word limit.
+
 ## Learning outcomes
 
 On completion of this module I should be able to:
