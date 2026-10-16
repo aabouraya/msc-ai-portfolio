@@ -157,6 +157,10 @@ main figure { margin: 1.25rem 0; }
 main figure img { display: block; background: #fff; border: 1px solid var(--border); }
 main figcaption { margin-top: .5rem; font-size: .88rem; color: var(--text-muted); }
 
+/* Tall forum screenshots scroll inside a frame instead of filling the page. */
+.screenshot { max-height: 36rem; overflow-y: auto; border: 1px solid var(--border); }
+.screenshot img { width: 100%; border: 0; }
+
 .muted { color: var(--text-muted); }
 .meta { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; font-size: .88rem; margin: .5rem 0; }
 

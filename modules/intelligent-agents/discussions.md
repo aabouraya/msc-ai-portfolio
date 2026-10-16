@@ -5,57 +5,82 @@ module: intelligent-agents
 nav_order: 2
 permalink: /modules/intelligent-agents/discussions/
 summary: >-
-  My posts in the collaborative discussion forum, and what each exchange changed
-  in my thinking. Evidences LO1 and LO4.
+  My posts in the collaborative discussion forum, and what I learned from each
+  discussion. Evidences LO1 and LO4.
 ---
 
-The full threads are reproduced verbatim in the [evidence appendix](../evidence/). This page
-maps each exchange to what it changed in my thinking.
+Screenshots from the module forum; peers' surnames and photos are hidden. Scroll
+inside an image, or select it to open it full size.
 
 ## Discussion 1 — Agent-Based Systems in contemporary organisations
 
-<p class="meta"><span class="badge badge--completed">completed</span> <span class="muted">Units 1–3 · 5–16 August 2026</span></p>
+<p class="meta"><span class="badge badge--completed">completed</span> <span class="muted">Units 1–3 · 5–16 August 2026 · <a href="../evidence/discussion-1/">text version</a></span></p>
 
-**[Full thread, verbatim](../evidence/discussion-1/)**
+### Initial post and peer responses
 
-| My post | Posted | Words |
-| --- | --- | --: |
-| Initial post: LLM agents trade reliability for adaptability | 5 Aug 2026 | 241 |
-| Response to Luis T.: multi-agent systems in manufacturing | 9 Aug 2026 | 198 |
-| Response to Khadijah H.: the rise of intelligent agents | 9 Aug 2026 | 203 |
-| Summary post | 16 Aug 2026 | 347 |
+<figure>
+  <div class="screenshot"><a href="{{ '/assets/img/intelligent-agents/discussions/d1-initial-post.png' | relative_url }}"><img src="{{ '/assets/img/intelligent-agents/discussions/d1-initial-post.png' | relative_url }}" alt="Forum screenshot: my initial post on agent-based systems in contemporary organisations, followed by responses from Isaac S. and Kapinga D." loading="lazy"></a></div>
+  <figcaption>My initial post (5 August 2026), with responses from Isaac S. (6 August) and Kapinga D. (16 August).</figcaption>
+</figure>
 
-<div class="wide" markdown="1">
+### Summary post
 
-| Exchange | What it changed in my thinking |
-| --- | --- |
-| Isaac S. on my post: verify outputs before handoff, evaluate the process, test in a sandbox | Reliability is an architectural and evaluation problem, not only a model limitation. Errors spread at handoffs between agents, so verification belongs there. This became the Critic in [ScholarPlan](../artefacts/#agent-based-system) |
-| Kapinga D. on my post: more autonomy does not mean more trust | Governance has to be explicit: human oversight, monitoring and defined operational boundaries |
-| My response to Luis T. | Every fix carries its own failure mode. An LLM that removes a usability barrier introduces hallucination. Reaching the same trade-off from manufacturing made me treat it as general |
-| My response to Khadijah H. | The useful question is not *how* autonomous but autonomous *over what*. An agent cannot be held answerable, so responsibility stays with whoever deploys it |
-| Reviewing the thread for this portfolio | Two referencing errors, corrected at the end of the evidence page. |
+<figure>
+  <div class="screenshot"><a href="{{ '/assets/img/intelligent-agents/discussions/d1-summary-post.png' | relative_url }}"><img src="{{ '/assets/img/intelligent-agents/discussions/d1-summary-post.png' | relative_url }}" alt="Forum screenshot: my summary post for Discussion 1." loading="lazy"></a></div>
+  <figcaption>My summary post (16 August 2026).</figcaption>
+</figure>
 
-</div>
+### My response to a peer
+
+<figure>
+  <div class="screenshot"><a href="{{ '/assets/img/intelligent-agents/discussions/d1-peer-response.png' | relative_url }}"><img src="{{ '/assets/img/intelligent-agents/discussions/d1-peer-response.png' | relative_url }}" alt="Forum screenshot: Luis T.'s initial post on multi-agent systems in manufacturing, my response, and the replies that followed." loading="lazy"></a></div>
+  <figcaption>My response (9 August 2026) to Luis T.'s post on multi-agent systems in manufacturing, with his post and the replies that followed.</figcaption>
+</figure>
+
+### What I learned
+
+- **Reliability is an architecture problem, not only a model problem.** Isaac's
+  three controls showed that errors spread at the handoffs between agents, so
+  that is where verification belongs. It became the Critic in ScholarPlan.
+- **Autonomy does not create trust.** Kapinga's reply made the case that
+  governance has to be designed in: oversight, monitoring and clear boundaries.
+- **Every fix has its own failure mode.** In Luis's thread, adding an LLM to
+  remove a usability barrier introduced hallucination. The thread ended on
+  central governance with decentralised execution, the hybrid ScholarPlan uses.
 
 ## Discussion 3 — Deep learning and the ethics of generative AI
 
-<p class="meta"><span class="badge badge--completed">completed</span> <span class="muted">30 September – 13 October 2026</span></p>
+<p class="meta"><span class="badge badge--completed">completed</span> <span class="muted">30 September – 13 October 2026 · <a href="../evidence/discussion-3/">text version</a></span></p>
 
-**[Full thread, verbatim](../evidence/discussion-3/)**
+### Initial post and peer responses
 
-| My post | Posted | Words |
-| --- | --- | --: |
-| Initial post: copyright and misinformation | 30 Sep 2026 | 173 |
-| Response to Isaac S.: content, source and accountability | 4 Oct 2026 | 217 |
-| Summary post | 13 Oct 2026 | 307 |
+<figure>
+  <div class="screenshot"><a href="{{ '/assets/img/intelligent-agents/discussions/d3-initial-post.png' | relative_url }}"><img src="{{ '/assets/img/intelligent-agents/discussions/d3-initial-post.png' | relative_url }}" alt="Forum screenshot: my initial post on the ethics of generative AI, followed by responses from Lara K. and Isaac S." loading="lazy"></a></div>
+  <figcaption>My initial post (30 September 2026), with responses from Lara K. (1 October) and Isaac S. (2 October).</figcaption>
+</figure>
 
-<div class="wide" markdown="1">
+### Summary post
 
-| Exchange | What it changed in my thinking |
-| --- | --- |
-| Lara K. on my post: I had conflated the *use* of deepfakes in elections with evidence that they *changed* results | I overstated the evidence, and my summary post corrects it. The more defensible harm is erosion of trust in authentic information |
-| Isaac S. on my post: safeguards at specific points in the lifecycle | "Careful oversight" was a conclusion with no mechanism. It became checks at data collection, model evaluation and distribution. The tutor made the same point about the team design ([tutor feedback](../evidence/tutor-feedback/)) |
-| My response to Isaac S.: the engineering trade-offs of watermarking | Naming the cost of a proposal moved the thread more than agreeing with it, and Isaac's summary built on my point. A watermark can confirm machine generation but never human authorship |
-| Reviewing the thread for this portfolio | Three referencing errors, corrected at the end of the evidence page |
+<figure>
+  <div class="screenshot"><a href="{{ '/assets/img/intelligent-agents/discussions/d3-summary-post.png' | relative_url }}"><img src="{{ '/assets/img/intelligent-agents/discussions/d3-summary-post.png' | relative_url }}" alt="Forum screenshot: my summary post for Discussion 3." loading="lazy"></a></div>
+  <figcaption>My summary post (13 October 2026).</figcaption>
+</figure>
 
-</div>
+### My response to a peer
+
+<figure>
+  <div class="screenshot"><a href="{{ '/assets/img/intelligent-agents/discussions/d3-peer-response.png' | relative_url }}"><img src="{{ '/assets/img/intelligent-agents/discussions/d3-peer-response.png' | relative_url }}" alt="Forum screenshot: Isaac S.'s initial post, my response, Yasmin A.'s response and Isaac's summary post." loading="lazy"></a></div>
+  <figcaption>My response (4 October 2026) to Isaac S.'s post, with his post, Yasmin A.'s response and his summary.</figcaption>
+</figure>
+
+### What I learned
+
+- **I overstated my evidence.** Lara showed that deepfakes have been *used*
+  around elections, not shown to *change* results. My summary post corrected
+  this: the defensible harm is lost trust in authentic information.
+- **An intention is not a safeguard.** Isaac turned my "careful oversight" into
+  checks at data collection, evaluation and distribution. The tutor found the
+  same gap in our team design.
+- **Naming a cost moves a discussion.** Isaac's summary built on my point about
+  the trade-offs of watermarking. A watermark can confirm machine generation,
+  but never human authorship.

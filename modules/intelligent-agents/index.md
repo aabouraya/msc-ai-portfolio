@@ -30,11 +30,11 @@ Prose only; tables, code, captions and references are excluded.
 | --- | --: |
 | Overview | 9 |
 | Artefacts | 133 |
-| Discussions | 22 |
+| Discussions | 200 |
 | Team | 38 |
 | Project evaluation | 469 |
 | Case studies | 616 |
-| **Total** (limit 1,500) | **1,287** |
+| **Total** (limit 1,500) | **1,465** |
 | [Reflection](reflection/) (limit 1,000) | **921** |
 
 <!-- wc:end -->
