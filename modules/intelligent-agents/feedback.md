@@ -153,7 +153,7 @@ numeric targets. "Re-planning" should have a cap. The same gap appears
 elsewhere in the portfolio:
 
 - My Discussion 3 post ended on "clear guidelines and careful oversight" until
-  [a peer turned it into specific safeguards](../discussions/#peer-responses-to-my-post-and-what-i-learned-1).
+  [a peer turned it into specific safeguards](../discussions/#discussion-3--deep-learning-and-the-ethics-of-generative-ai).
 - The [team minutes](../team/#what-worked-and-what-did-not) record what was
   discussed but not what was decided.
 
