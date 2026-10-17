@@ -65,12 +65,12 @@ uv run scholarplan search runs/<timestamp> "why scale the dot product"   # offli
 
 | The design said | What was built | Why |
 | --- | --- | --- |
-| The Llama Critic can run locally via Ollama (§3) | Azure only | It needs about 40 GB of memory; the laptop has 32 GB |
-| The Critic is unit-tested against MiniCheck (§4, §6) | Unit tests use a fake model; MiniCheck is a second opinion | MiniCheck answers only yes or no, and the Planner needs the Critic's written reason to re-plan |
+| The Llama Critic can run locally via Ollama (section [3](../evidence/team-proposal/#design-decisions)) | Azure only | It needs about 40 GB of memory; the laptop has 32 GB |
+| The Critic is unit-tested against MiniCheck (sections [4](../evidence/team-proposal/#development-approach) and [6](../evidence/team-proposal/#tools-libraries-models-and-environments)) | Unit tests use a fake model; MiniCheck is a second opinion | MiniCheck answers only yes or no, and the Planner needs the Critic's written reason to re-plan |
 | About 50 hand-labelled claims for the Critic | 13 claims | A smaller set was built; it is listed as a limitation |
 | GPT-5-nano as a fallback model | No fallback | Azure for Students has no GPT-5-nano quota |
-| Full text where open access, abstracts as fallback (§2.2) | Abstracts only | Abstracts are always available from the APIs; full text often is not |
-| Low-temperature sampling (§5) | Strict JSON schemas for GPT-5-mini; temperature 0 for Llama | GPT-5-mini accepts only its default temperature |
+| Full text where open access, abstracts as fallback (section [2.2](../evidence/team-proposal/#assumptions)) | Abstracts only | Abstracts are always available from the APIs; full text often is not |
+| Low-temperature sampling (section [5](../evidence/team-proposal/#anticipated-challenges)) | Strict JSON schemas for GPT-5-mini; temperature 0 for Llama | GPT-5-mini accepts only its default temperature |
 
 #### Results
 
@@ -117,10 +117,10 @@ uv run scholarplan search runs/<timestamp> "why scale the dot product"   # offli
 
 | The brief asks the agents to… | ScholarPlan agent | Where in the proposal |
 | --- | --- | --- |
-| Plan the work | Planner (deliberative, ReAct loop) | §3, §5 |
-| Find documents or online content | Retriever (arXiv, OpenAlex, Crossref) | §2.1, §6 |
-| Process or reason over the data | Processor and Critic (claim-level verification) | §3, §5 |
-| Do something meaningful with the result | Archivist (report, BibTeX, vector index, trace) | §2.1, §7 |
+| Plan the work | Planner (deliberative, ReAct loop) | Sections [3](../evidence/team-proposal/#design-decisions) and [5](../evidence/team-proposal/#anticipated-challenges) |
+| Find documents or online content | Retriever (arXiv, OpenAlex, Crossref) | Sections [2.1](../evidence/team-proposal/#requirements) and [6](../evidence/team-proposal/#tools-libraries-models-and-environments) |
+| Process or reason over the data | Processor and Critic (claim-level verification) | Sections [3](../evidence/team-proposal/#design-decisions) and [5](../evidence/team-proposal/#anticipated-challenges) |
+| Do something meaningful with the result | Archivist (report, BibTeX, vector index, trace) | Sections [2.1](../evidence/team-proposal/#requirements) and [7](../evidence/team-proposal/#conclusion) |
 
 <figure>
   <a href="{{ '/assets/img/intelligent-agents/scholarplan-architecture.png' | relative_url }}"><img src="{{ '/assets/img/intelligent-agents/scholarplan-architecture.png' | relative_url }}" alt="Architecture diagram: the Planner, Retriever, Processor, Critic and Archivist each connect only to a central shared blackboard."></a>

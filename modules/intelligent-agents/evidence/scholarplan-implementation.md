@@ -11,8 +11,8 @@ summary: >-
 Appendix to the [Artefacts](../../artefacts/#agent-based-system) page, which shows the code, diagrams and results.
 
 **The brief.** Build the agent designed in the team project and present it. The
-team proposal is in [Design and modelling](../team-proposal/)
-below. This part is my individual work.
+team proposal is in the [evidence appendix](../team-proposal/). This part is my
+individual work.
 
 **The evidence.**
 
@@ -80,7 +80,7 @@ were added to the repository afterwards, in commit
 </figure>
 
 Neither diagram shows which agent writes which table. That is the permission
-model the proposal took from the Gaia methodology (§4), so it is traced here
+model the proposal took from the Gaia methodology (section [4](../team-proposal/#development-approach)), so it is traced here
 from the code:
 
 | Agent | Writes to |
@@ -102,12 +102,12 @@ in the [development log](https://github.com/aabouraya/scholar_plan/blob/c66190e/
 
 | The design said | What was built | Why |
 | --- | --- | --- |
-| The Llama Critic can run locally via Ollama (§3) | Azure only | It needs about 40 GB of memory; the laptop has 32 GB |
-| The Critic is unit-tested against MiniCheck (§4, §6) | Unit tests use a fake model; MiniCheck is a second opinion | MiniCheck answers only yes or no, and the Planner needs the Critic's written reason to re-plan |
+| The Llama Critic can run locally via Ollama (section [3](../team-proposal/#design-decisions)) | Azure only | It needs about 40 GB of memory; the laptop has 32 GB |
+| The Critic is unit-tested against MiniCheck (sections [4](../team-proposal/#development-approach) and [6](../team-proposal/#tools-libraries-models-and-environments)) | Unit tests use a fake model; MiniCheck is a second opinion | MiniCheck answers only yes or no, and the Planner needs the Critic's written reason to re-plan |
 | About 50 hand-labelled claims for the Critic | 13 claims | A smaller set was built; it is listed as a limitation |
 | GPT-5-nano as a fallback model | No fallback | Azure for Students has no GPT-5-nano quota |
-| Full text where open access, abstracts as fallback (§2.2) | Abstracts only | Abstracts are always available from the APIs; full text often is not |
-| Low-temperature sampling (§5) | Strict JSON schemas for GPT-5-mini; temperature 0 for Llama | GPT-5-mini accepts only its default temperature |
+| Full text where open access, abstracts as fallback (section [2.2](../team-proposal/#assumptions)) | Abstracts only | Abstracts are always available from the APIs; full text often is not |
+| Low-temperature sampling (section [5](../team-proposal/#anticipated-challenges)) | Strict JSON schemas for GPT-5-mini; temperature 0 for Llama | GPT-5-mini accepts only its default temperature |
 
 ## Results
 

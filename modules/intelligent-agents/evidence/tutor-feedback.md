@@ -88,7 +88,7 @@ from this design.
 **1. A static structural view.** I agree. The design has activity and sequence
 diagrams, which show behaviour, but nothing shows structure: which data the
 blackboard holds and which agent may read or write each part. That is the
-permission model the proposal claims from Gaia (§4) but never draws, so a class
+permission model the proposal claims from Gaia (section [4](../team-proposal/#development-approach)) but never draws, so a class
 diagram would have made that claim checkable.
 
 *In the implementation:* done on 14 October 2026. A UML class diagram and an
@@ -97,7 +97,7 @@ repository and checked against the code. The agent-to-table permissions, which
 neither diagram shows, are traced in a table beside them. All three are under
 [Structure: classes and blackboard tables](../../artefacts/#structure-classes-and-blackboard-tables).
 
-**2. Measurable evaluation targets.** I agree. §4 describes "an evaluation
+**2. Measurable evaluation targets.** I agree. Section [4](../team-proposal/#development-approach) describes "an evaluation
 harness of fixed research questions with known relevant sources, measuring
 source recall and Critic pass rate". But it does not say which questions, what
 recall would count as success, or how accurate the Critic must be. Without
@@ -118,7 +118,7 @@ of known papers had no target. That is the metric that later varied from 20% to
 **3. Fallback rules for repeated rejection.** I agree. The design's only bound
 is the 20-step budget for the whole run. A subtask the Critic keeps rejecting
 can use up that budget, and the design leaves the decision to give up to the
-Planner. That contradicts the proposal's own LLM-Modulo argument (§3) that
+Planner. That contradicts the proposal's own LLM-Modulo argument (section [3](../team-proposal/#design-decisions)) that
 control should not depend on the LLM. The tutor's rule (three attempts, then
 mark the subtask unresolvable) is simple, testable and outside the model.
 

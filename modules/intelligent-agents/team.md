@@ -16,10 +16,10 @@ summary: >-
 | What I did | When | Where it ended up |
 | --- | --- | --- |
 | Drafted the team contract and asked the team to review and sign it | 30 Jul 2026 | [Team contract](#team-records) |
-| Argued for cooperating specialised agents over one monolithic program, on modularity, scalability and task separation | Meeting 1 | Proposal §3 |
-| Worked out how goals break into subtasks, and what happens when one fails | Meeting 1 | Proposal §3; the re-planning loop in my [implementation](../evidence/scholarplan-implementation/#how-it-works) |
+| Argued for cooperating specialised agents over one monolithic program, on modularity, scalability and task separation | Meeting 1 | Proposal section [3](../evidence/team-proposal/#design-decisions) |
+| Worked out how goals break into subtasks, and what happens when one fails | Meeting 1 | Proposal section [3](../evidence/team-proposal/#design-decisions); the re-planning loop in my [implementation](../evidence/scholarplan-implementation/#how-it-works) |
 | Co-presented the first high-level design draft | Meeting 2 | Proposal Figure 1 |
-| Co-authored the requirements, execution tools and development methods draft | Meeting 3 | Proposal §2, §4, §6 |
+| Co-authored the requirements, execution tools and development methods draft | Meeting 3 | Proposal sections [2](../evidence/team-proposal/#system-requirements-and-assumptions), [4](../evidence/team-proposal/#development-approach) and [6](../evidence/team-proposal/#tools-libraries-models-and-environments) |
 | Drew the blackboard interaction flows: how agents share state | Meeting 4 | Proposal Figures 2 and 3 |
 
 </div>
@@ -30,9 +30,9 @@ summary: >-
 
 | Part of the [team proposal](../evidence/team-proposal/) | Where it was produced | Owner, as minuted |
 | --- | --- | --- |
-| Agent roles and the multi-agent justification (§3) | Meeting 1 | Me |
-| High-level design and architecture view (§3, Figure 1) | Meetings 2–4 | Yasmin, co-presented with me in Meeting 2 |
-| Requirements, assumptions, tools and development approach (§2, §4, §6) | Meetings 3–4 | Adel A., co-authored with me in Meeting 3 |
+| Agent roles and the multi-agent justification (section [3](../evidence/team-proposal/#design-decisions)) | Meeting 1 | Me |
+| High-level design and architecture view (section [3](../evidence/team-proposal/#design-decisions), Figure 1) | Meetings 2–4 | Yasmin, co-presented with me in Meeting 2 |
+| Requirements, assumptions, tools and development approach (sections [2](../evidence/team-proposal/#system-requirements-and-assumptions), [4](../evidence/team-proposal/#development-approach) and [6](../evidence/team-proposal/#tools-libraries-models-and-environments)) | Meetings 3–4 | Adel A., co-authored with me in Meeting 3 |
 | Blackboard interaction flows (Figures 2 and 3) | Meeting 4 | Me |
 
 </div>

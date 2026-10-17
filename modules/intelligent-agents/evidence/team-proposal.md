@@ -25,16 +25,16 @@ each requirement in the brief is met.
 
 | The brief asks the agents to… | ScholarPlan agent | Where in the proposal |
 | --- | --- | --- |
-| Plan the work | Planner (deliberative, ReAct loop) | §3, §5 |
-| Find documents or online content | Retriever (arXiv, OpenAlex, Crossref) | §2.1, §6 |
-| Process or reason over the data | Processor and Critic (claim-level verification) | §3, §5 |
-| Do something meaningful with the result | Archivist (report, BibTeX, vector index, trace) | §2.1, §7 |
+| Plan the work | Planner (deliberative, ReAct loop) | Sections [3](#design-decisions) and [5](#anticipated-challenges) |
+| Find documents or online content | Retriever (arXiv, OpenAlex, Crossref) | Sections [2.1](#requirements) and [6](#tools-libraries-models-and-environments) |
+| Process or reason over the data | Processor and Critic (claim-level verification) | Sections [3](#design-decisions) and [5](#anticipated-challenges) |
+| Do something meaningful with the result | Archivist (report, BibTeX, vector index, trace) | Sections [2.1](#requirements) and [7](#conclusion) |
 
 The proposal is reproduced verbatim below, including the figures as submitted.
 Only the heading levels and line wrapping are changed so that it fits this page.
 How the work was divided is recorded on the [Team](../../team/) page.
-The tutor's feedback on the proposal, with my response, is on the
-[Feedback](../tutor-feedback/) page.
+The tutor's feedback on the proposal, with my response, is in the
+[evidence appendix](../tutor-feedback/).
 
 <div class="post" markdown="1">
 
