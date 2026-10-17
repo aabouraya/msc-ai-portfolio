@@ -5,35 +5,9 @@ module: intelligent-agents
 nav_order: 3
 permalink: /modules/intelligent-agents/team/
 summary: >-
-  The team design project: meetings, my contribution, and what worked.
-  Evidences LO1–LO4.
+  The team design project: my contribution, the team's records, and what
+  worked. Evidences LO1–LO4.
 ---
-
-Full minutes, which I wrote: [evidence appendix](../evidence/meeting-minutes/).
-
-## Meeting log
-
-<div class="wide" markdown="1">
-
-| # | Date | Present | Focus | My contribution, as minuted |
-| --- | --- | --- | --- | --- |
-| 1 | 6 Aug 2026 | Me, Yasmin | Team contract; agent roles; LLM planning and re-planning | Defined agent roles and the justification for a multi-agent design |
-| 2 | 14 Aug 2026 | Me, Yasmin, Adel A. | First HLD draft; scoping requirements, tooling and methodology | Co-presented the HLD draft with Yasmin |
-| 3 | 24 Aug 2026 | Me, Yasmin, Adel A. | Requirements and methodology draft; consolidated HLD | Co-authored and presented the requirements, execution tools and development methods draft |
-| 4 | 29 Aug 2026 | Me, Yasmin, Adel A. | Finalised requirements; visual HLD; Blackboard interaction flow | Presented the interaction flow diagrams for the Blackboard pattern |
-
-</div>
-
-## Team output
-
-Full proposal (September 2026): [evidence appendix](../evidence/team-proposal/).
-
-| Part of the proposal | Where it was produced | Owner, as minuted |
-| --- | --- | --- |
-| Agent roles and the multi-agent justification (§3) | Meeting 1 | Me |
-| High-level design and architecture view (§3, Figure 1) | Meetings 2–4 | Yasmin, co-presented with me in Meeting 2 |
-| Requirements, assumptions, tools and development approach (§2, §4, §6) | Meetings 3–4 | Adel A., co-authored with me in Meeting 3 |
-| Blackboard interaction flows (Figures 2 and 3) | Meeting 4 | Me |
 
 ## My contribution
 
@@ -41,17 +15,56 @@ Full proposal (September 2026): [evidence appendix](../evidence/team-proposal/).
 
 | What I did | When | Where it ended up |
 | --- | --- | --- |
+| Drafted the team contract and asked the team to review and sign it | 30 Jul 2026 | [Team contract](#team-records) |
 | Argued for cooperating specialised agents over one monolithic program, on modularity, scalability and task separation | Meeting 1 | Proposal §3 |
 | Worked out how goals break into subtasks, and what happens when one fails | Meeting 1 | Proposal §3; the re-planning loop in my [implementation](../evidence/scholarplan-implementation/#how-it-works) |
 | Co-presented the first high-level design draft | Meeting 2 | Proposal Figure 1 |
 | Co-authored the requirements, execution tools and development methods draft | Meeting 3 | Proposal §2, §4, §6 |
 | Drew the blackboard interaction flows: how agents share state | Meeting 4 | Proposal Figures 2 and 3 |
-| Wrote and posted the minutes for all four meetings | 1 Sep 2026 | [Minutes](../evidence/meeting-minutes/) |
+| Wrote and posted the minutes for all four meetings | 1 Sep 2026 | [Meeting minutes](#team-records) |
 
 </div>
 
-My focus was the system's *dynamics*: how a goal becomes subtasks and how agents
-exchange state. Yasmin owned the structure and Adel A. the requirements.
+## Team records
+
+Screenshots from the module forum. Select one to open it full size.
+
+{% assign shots = '/assets/img/intelligent-agents/team/' %}
+<div class="shots shots--five">
+  <a class="shot" href="{{ shots | append: 'team-contract.png' | relative_url }}">
+    <img src="{{ shots | append: 'team-contract.png' | relative_url }}" alt="Forum screenshot: my post asking the team to review and sign the team contract I drafted. The document link is hidden." loading="lazy">
+    <span class="shot-text"><span class="shot-title">Team contract</span><span class="shot-meta">30 Jul 2026 · drafted by me, sent for signature</span><span class="shot-open">Open full size →</span></span>
+  </a>
+  <a class="shot" href="{{ shots | append: 'meeting-1.png' | relative_url }}">
+    <img src="{{ shots | append: 'meeting-1.png' | relative_url }}" alt="Forum screenshot: minutes of Meeting 1, initial architecture brainstorming and governance." loading="lazy">
+    <span class="shot-text"><span class="shot-title">Meeting 1</span><span class="shot-meta">6 Aug 2026 · team contract, agent roles, LLM planning</span><span class="shot-open">Open full size →</span></span>
+  </a>
+  <a class="shot" href="{{ shots | append: 'meeting-2.png' | relative_url }}">
+    <img src="{{ shots | append: 'meeting-2.png' | relative_url }}" alt="Forum screenshot: minutes of Meeting 2, high-level design draft and scope definition." loading="lazy">
+    <span class="shot-text"><span class="shot-title">Meeting 2</span><span class="shot-meta">14 Aug 2026 · first design draft, co-presented by me</span><span class="shot-open">Open full size →</span></span>
+  </a>
+  <a class="shot" href="{{ shots | append: 'meeting-3.png' | relative_url }}">
+    <img src="{{ shots | append: 'meeting-3.png' | relative_url }}" alt="Forum screenshot: minutes of Meeting 3, draft consolidation and alignment." loading="lazy">
+    <span class="shot-text"><span class="shot-title">Meeting 3</span><span class="shot-meta">24 Aug 2026 · requirements draft, co-authored by me</span><span class="shot-open">Open full size →</span></span>
+  </a>
+  <a class="shot" href="{{ shots | append: 'meeting-4.png' | relative_url }}">
+    <img src="{{ shots | append: 'meeting-4.png' | relative_url }}" alt="Forum screenshot: minutes of Meeting 4, finalising the system design and requirements." loading="lazy">
+    <span class="shot-text"><span class="shot-title">Meeting 4</span><span class="shot-meta">29 Aug 2026 · blackboard flows, presented by me</span><span class="shot-open">Open full size →</span></span>
+  </a>
+</div>
+
+## Who owned what
+
+<div class="wide" markdown="1">
+
+| Part of the [team proposal](../evidence/team-proposal/) | Where it was produced | Owner, as minuted |
+| --- | --- | --- |
+| Agent roles and the multi-agent justification (§3) | Meeting 1 | Me |
+| High-level design and architecture view (§3, Figure 1) | Meetings 2–4 | Yasmin, co-presented with me in Meeting 2 |
+| Requirements, assumptions, tools and development approach (§2, §4, §6) | Meetings 3–4 | Adel A., co-authored with me in Meeting 3 |
+| Blackboard interaction flows (Figures 2 and 3) | Meeting 4 | Me |
+
+</div>
 
 ## What worked and what did not
 

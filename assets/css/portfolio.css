@@ -204,11 +204,17 @@ main .shot img {
   width: 100%;
   height: 14rem;
   object-fit: cover;
-  object-position: top;
+  object-position: left top;
   background: #fff;
   border: 0;
   border-bottom: 1px solid var(--border);
   border-radius: 0;
+}
+/* Five records in one row (Team page); back to the flexible grid on narrow screens. */
+.prose > .shots--five { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; }
+main .shots--five .shot img { height: 9rem; }
+@media (max-width: 52rem) {
+  .prose > .shots--five { grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); }
 }
 .shot-text { padding: .75rem .9rem .85rem; }
 .shot-title { display: block; font-weight: 650; line-height: 1.35; }
