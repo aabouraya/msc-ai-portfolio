@@ -75,6 +75,7 @@ Select a record to open it full size. Surnames and the document link are hidden.
 
 | The contract said | What happened |
 | --- | --- |
+| Goals, roles and rules agreed up front | Drafted on 30 July and reviewed in Meeting 1, before any design work. Each meeting then built on the last, and nothing was reopened |
 | Weekly virtual meetings | Four Zoom meetings, 6–29 August |
 | Daily updates on the Group A forum | Day-to-day chat and file sharing moved to a WhatsApp group; the forum kept the formal record: the contract and the minutes |
 | A single shared document with version tracking | The contract was drafted and signed in Google Docs |
@@ -98,17 +99,5 @@ feedback, and my response to its three improvement points, are in the
 | Application of knowledge | "Very effective use of specialised techniques to address practical challenges such as API rate limits and non-deterministic model behaviour" |
 | Criticality | "A strong critical evaluation of agent architectures and orchestration frameworks" |
 | Structure and presentation | "Well structured and professionally presented" |
-
-</div>
-
-## What worked and what did not
-
-<div class="wide" markdown="1">
-
-| | What happened | Why |
-| --- | --- | --- |
-| **Worked** | Each meeting built on the last: concept, then draft, then consolidation, then final. Nothing was reopened | The team contract was agreed before any design work |
-| **Worked** | Work split by interest and stayed split. Consolidation meant merging, not reconciling | Structure, requirements and dynamics each had one owner |
-| **Did not** | My minutes record what was discussed, not what was decided, who owns the follow-up, or by when | I wrote them as agendas |
 
 </div>

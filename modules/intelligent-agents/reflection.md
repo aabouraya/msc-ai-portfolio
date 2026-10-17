@@ -85,7 +85,7 @@ Research on social loafing suggests that shared, unclear responsibility invites
 withdrawal (Latané, Williams and Harkins, 1979). Our team contract, with named
 owners for each section, limited the damage. My own part was weaker. My minutes
 recorded discussion rather than decisions and owners, and they were written late
-([team page](../team/#what-worked-and-what-did-not)). So the gap was noticed at
+([team page](../team/#team-records)). So the gap was noticed at
 the deadline rather than earlier.
 
 **Feedback.** Feedback changed how I saw my own work. The tutor asked for
