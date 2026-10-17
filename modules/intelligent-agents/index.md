@@ -35,6 +35,6 @@ Prose only; tables, code, captions and references are excluded.
 | Project evaluation | 469 |
 | Case studies | 616 |
 | **Total** (limit 1,500) | **1,479** |
-| [Reflection](reflection/) (limit 1,000) | **921** |
+| [Reflection](reflection/) (limit 1,000) | **871** |
 
 <!-- wc:end -->

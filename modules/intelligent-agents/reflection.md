@@ -83,15 +83,12 @@ modularity as a software quality; I now see it as risk management for teams too.
 
 Research on social loafing suggests that shared, unclear responsibility invites
 withdrawal (Latané, Williams and Harkins, 1979). Our team contract, with named
-owners for each section, limited the damage. My own part was weaker. My minutes
-recorded discussion rather than decisions and owners, and they were written late
-([team page](../team/#team-records)). So the gap was noticed at
-the deadline rather than earlier.
+owners for each section, limited the damage.
 
 **Feedback.** Feedback changed how I saw my own work. The tutor asked for
 measurable evaluation targets and a three-attempt cap per subtask. In Discussion
-3, a peer turned my "careful oversight" into specific safeguards. Together with
-my minutes, the pattern was uncomfortable but clear: I tend to state an
+3, a peer turned my "careful oversight" into specific safeguards. Taken
+together, the pattern was uncomfortable but clear: I tend to state an
 intention where a checkable rule is needed. I set a numeric target for the
 Critic, which passed, and none for recall, which was hard. Recognising this was
 the most useful thing I learned about myself in this module.
@@ -111,9 +108,8 @@ Four changes follow.
 3. **I will turn intentions into checkable rules**: numeric targets set before
    tuning, and a test that triggers every safety rule.
 4. **In teams**, I will raise a participation risk at the first missed check-in,
-   not at the deadline. I will write minutes as decision, owner and due date
-   within a day of each meeting. I also want to handle late disagreements more
-   formally and calmly.
+   not at the deadline. I also want to handle late disagreements more formally
+   and calmly.
 
 ## References
 
