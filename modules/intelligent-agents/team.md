@@ -21,7 +21,6 @@ summary: >-
 | Co-presented the first high-level design draft | Meeting 2 | Proposal Figure 1 |
 | Co-authored the requirements, execution tools and development methods draft | Meeting 3 | Proposal §2, §4, §6 |
 | Drew the blackboard interaction flows: how agents share state | Meeting 4 | Proposal Figures 2 and 3 |
-| Wrote and posted the minutes for all four meetings | 1 Sep 2026 | [Meeting minutes](#team-records) |
 
 </div>
 
@@ -75,6 +74,5 @@ Screenshots from the module forum. Select one to open it full size.
 | **Worked** | Each meeting built on the last: concept, then draft, then consolidation, then final. Nothing was reopened | The team contract was agreed before any design work |
 | **Worked** | Work split by interest and stayed split. Consolidation meant merging, not reconciling | Structure, requirements and dynamics each had one owner |
 | **Did not** | My minutes record what was discussed, not what was decided, who owns the follow-up, or by when | I wrote them as agendas |
-| **Did not** | All four minutes were posted on 1 September, after the last meeting | I wrote them up at the end, not after each meeting |
 
 </div>
