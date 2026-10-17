@@ -210,7 +210,13 @@ main .shot img {
   border-bottom: 1px solid var(--border);
   border-radius: 0;
 }
-/* Five records in one row (Team page); back to the flexible grid on narrow screens. */
+/* Fixed three-column grid (six Team records as 3 x 2). */
+.prose > .shots--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 44rem) {
+  .prose > .shots--three { grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+}
+
+/* Five records in one row; back to the flexible grid on narrow screens. */
 .prose > .shots--five { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; }
 main .shots--five .shot img { height: 9rem; }
 @media (max-width: 52rem) {

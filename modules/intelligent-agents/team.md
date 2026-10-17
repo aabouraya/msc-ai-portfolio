@@ -5,8 +5,8 @@ module: intelligent-agents
 nav_order: 3
 permalink: /modules/intelligent-agents/team/
 summary: >-
-  The team design project: my contribution, the team's records, and what
-  worked. Evidences LO1–LO4.
+  The team design project: my contribution, the team's records, how the team
+  worked against its contract, and the outcome. Evidences LO1–LO4.
 ---
 
 ## My contribution
@@ -24,15 +24,32 @@ summary: >-
 
 </div>
 
+## Who owned what
+
+<div class="wide" markdown="1">
+
+| Part of the [team proposal](../evidence/team-proposal/) | Where it was produced | Owner, as minuted |
+| --- | --- | --- |
+| Agent roles and the multi-agent justification (§3) | Meeting 1 | Me |
+| High-level design and architecture view (§3, Figure 1) | Meetings 2–4 | Yasmin, co-presented with me in Meeting 2 |
+| Requirements, assumptions, tools and development approach (§2, §4, §6) | Meetings 3–4 | Adel A., co-authored with me in Meeting 3 |
+| Blackboard interaction flows (Figures 2 and 3) | Meeting 4 | Me |
+
+</div>
+
 ## Team records
 
-Screenshots from the module forum. Select one to open it full size.
+Select a record to open it full size. Surnames and the document link are hidden.
 
 {% assign shots = '/assets/img/intelligent-agents/team/' %}
-<div class="shots shots--five">
+<div class="shots shots--three">
+  <a class="shot" href="{{ shots | append: 'team-contract-signed.png' | relative_url }}">
+    <img src="{{ shots | append: 'team-contract-signed.png' | relative_url }}" alt="The signed team contract: goals, expectations, policies, roles, consequences and the members' signatures." loading="lazy">
+    <span class="shot-text"><span class="shot-title">Signed team contract</span><span class="shot-meta">Signed 30 Jul – 15 Aug 2026 · goals, roles, consequences</span><span class="shot-open">Open full size →</span></span>
+  </a>
   <a class="shot" href="{{ shots | append: 'team-contract.png' | relative_url }}">
-    <img src="{{ shots | append: 'team-contract.png' | relative_url }}" alt="Forum screenshot: my post asking the team to review and sign the team contract I drafted. The document link is hidden." loading="lazy">
-    <span class="shot-text"><span class="shot-title">Team contract</span><span class="shot-meta">30 Jul 2026 · drafted by me, sent for signature</span><span class="shot-open">Open full size →</span></span>
+    <img src="{{ shots | append: 'team-contract.png' | relative_url }}" alt="Forum screenshot: my post asking the team to review and sign the team contract I drafted." loading="lazy">
+    <span class="shot-text"><span class="shot-title">Contract sent for signature</span><span class="shot-meta">30 Jul 2026 · drafted by me</span><span class="shot-open">Open full size →</span></span>
   </a>
   <a class="shot" href="{{ shots | append: 'meeting-1.png' | relative_url }}">
     <img src="{{ shots | append: 'meeting-1.png' | relative_url }}" alt="Forum screenshot: minutes of Meeting 1, initial architecture brainstorming and governance." loading="lazy">
@@ -52,16 +69,35 @@ Screenshots from the module forum. Select one to open it full size.
   </a>
 </div>
 
-## Who owned what
+## The contract against practice
 
 <div class="wide" markdown="1">
 
-| Part of the [team proposal](../evidence/team-proposal/) | Where it was produced | Owner, as minuted |
-| --- | --- | --- |
-| Agent roles and the multi-agent justification (§3) | Meeting 1 | Me |
-| High-level design and architecture view (§3, Figure 1) | Meetings 2–4 | Yasmin, co-presented with me in Meeting 2 |
-| Requirements, assumptions, tools and development approach (§2, §4, §6) | Meetings 3–4 | Adel A., co-authored with me in Meeting 3 |
-| Blackboard interaction flows (Figures 2 and 3) | Meeting 4 | Me |
+| The contract said | What happened |
+| --- | --- |
+| Weekly virtual meetings | Four Zoom meetings, 6–29 August |
+| Daily updates on the Group A forum | Day-to-day chat and file sharing moved to a WhatsApp group; the forum kept the formal record: the contract and the minutes |
+| A single shared document with version tracking | The contract was drafted and signed in Google Docs |
+| A member unresponsive for 48 hours: reallocate their tasks | Applied. One member signed last, joined no meeting and missed an internal deadline. The other three reallocated the task and submitted on time |
+| Roles: lead, architect, research specialist, quality editor | Work split by area instead: structure (Yasmin), requirements (Adel A.) and dynamics (me) |
+| At least two diagrams, for example sequence and class | Architecture, activity and sequence diagrams, but no class diagram. It was the tutor's first improvement point; I added one in my [implementation](../artefacts/#structure-classes-and-blackboard-tables) |
+
+</div>
+
+## Outcome
+
+The tutor's feedback on the team proposal, by marking criterion. The full
+feedback, and my response to its three improvement points, are in the
+[evidence appendix](../evidence/tutor-feedback/).
+
+<div class="wide" markdown="1">
+
+| Criterion | The tutor's verdict |
+| --- | --- |
+| Knowledge and understanding | "Outstanding domain knowledge, with architectural choices well supported by relevant academic literature" |
+| Application of knowledge | "Very effective use of specialised techniques to address practical challenges such as API rate limits and non-deterministic model behaviour" |
+| Criticality | "A strong critical evaluation of agent architectures and orchestration frameworks" |
+| Structure and presentation | "Well structured and professionally presented" |
 
 </div>
 
