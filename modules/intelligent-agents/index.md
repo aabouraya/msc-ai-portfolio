@@ -33,10 +33,6 @@ communicate and work together, and how to build them responsibly.
     <p>Explainability, safety and bias.</p>
   </li>
   <li class="card">
-    <h3><a href="reflection/">Reflection</a></h3>
-    <p>How the module changed my practice.</p>
-  </li>
-  <li class="card">
     <h3><a href="evidence/">Appendix</a></h3>
     <p>Original proposal and tutor feedback.</p>
   </li>
