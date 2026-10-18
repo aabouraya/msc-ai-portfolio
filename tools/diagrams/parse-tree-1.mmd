@@ -1,0 +1,12 @@
+flowchart TD
+    S[S] --> NP1[NP] & VP[VP]
+    NP1 --> DT1[DT] & NN1[NN]
+    DT1 --> w1([The])
+    NN1 --> w2([government])
+    VP --> VBD[VBD] & NP2[NP]
+    VBD --> w3([raised])
+    NP2 --> NN2[NN] & NNS[NNS]
+    NN2 --> w4([interest])
+    NNS --> w5([rates])
+    classDef word fill:#fff,stroke:#999;
+    class w1,w2,w3,w4,w5 word;

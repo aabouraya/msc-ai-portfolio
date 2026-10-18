@@ -1,0 +1,14 @@
+flowchart TD
+    S[S] --> NP1[NP] & VP[VP]
+    NP1 --> DT1[DT] & NN1[NN]
+    DT1 --> w1([The])
+    NN1 --> w2([internet])
+    VP --> VBZ[VBZ] & NP2[NP] & NP3[NP]
+    VBZ --> w3([gives])
+    NP2 --> NN2[NN]
+    NN2 --> w4([everyone])
+    NP3 --> DT3[DT] & NN3[NN]
+    DT3 --> w5([a])
+    NN3 --> w6([voice])
+    classDef word fill:#fff,stroke:#999;
+    class w1,w2,w3,w4,w5,w6 word;

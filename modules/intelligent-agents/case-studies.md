@@ -2,89 +2,64 @@
 title: Reflective Case Studies
 short_title: Case studies
 module: intelligent-agents
-nav_order: 5
+nav_order: 6
 permalink: /modules/intelligent-agents/case-studies/
 summary: >-
-  Three short reflective case studies, each grounded in a decision or incident
-  from building ScholarPlan, structured with Rolfe et al.'s (2001) What, So what,
-  Now what.
+  Three incidents from building ScholarPlan, each in Rolfe et al.'s (2001) What,
+  So what, Now what. Evidences LO2 and LO3.
 ---
 
-<p class="meta"><span class="muted">Evidences LO2, LO3</span></p>
-
-Each follows Rolfe, Freshwater and Jasper's (2001) **What**, **So what**, **Now
-what**. Evidence: the ScholarPlan
-[development log](https://github.com/aabouraya/scholar_plan/blob/c66190e/docs/development_log.md),
-[remediation log](https://github.com/aabouraya/scholar_plan/blob/c66190e/docs/remediation_log.md)
+Evidence:
+[development log](https://github.com/aabouraya/scholar_plan/blob/c66190e/docs/development_log.md)
 and [test report](https://github.com/aabouraya/scholar_plan/blob/c66190e/docs/testing/test_report.md).
 
-## Case study 1 — Explainable decisions: an explanation the system needed
+## 1. Explainable decisions: an explanation the system needed
 
-**What.** In iteration 4 I considered making MiniCheck the Critic, since it
-scores higher than Llama on the LLM-AggreFact benchmark (77.4 against 74.5). I
-kept Llama because MiniCheck only answers yes or no. The Planner re-plans from
-the Critic's written reason, so without a reason the feedback loop has nothing
-to act on. MiniCheck became a second opinion instead.
+**What.** MiniCheck outscores Llama on LLM-AggreFact (77.4 against 74.5), but
+I kept Llama as the Critic: MiniCheck answers only yes or no, and the Planner
+re-plans from the Critic's written reason.
 
-**So what.** In ScholarPlan, explanation is functional, not cosmetic: the main
-reader of the Critic's explanation is another agent. Its reasons are contrastive
-("the claim says *eliminates*; the source says *reduces*"), which Miller (2019)
-identifies as the form of explanation people find most useful. I traded some
-accuracy for explainability, a trade-off I had only read about before. The
-reasons may not be faithful, though. A model's stated reason need not be what
-caused its verdict (Turpin *et al.*, 2023). The stronger explainability is the
-trace, which links every claim to the source it came from. A reader can check
-it rather than trust it.
+**So what.** The explanation's main reader is another agent, so it is
+functional. Its reasons are contrastive ("the claim says *eliminates*; the
+source says *reduces*"), the form Miller (2019) finds most useful. I traded
+accuracy for explainability. Yet a stated reason may not be what caused the
+verdict (Turpin *et al.*, 2023); the trace linking each claim to its source can
+be checked rather than trusted.
 
-**Now what.** I will ask "who uses this explanation?" as a design requirement. I
-will prefer provenance a reader can verify over plausible narrative reasons. I
-will also test whether a rejection reason points to real text in the source.
+**Now what.** I will treat "who uses this explanation?" as a requirement, and
+test that reasons point to real source text.
 
-## Case study 2 — AI safety constraints: bounds outside the model
+## 2. AI safety constraints: bounds outside the model
 
-**What.** ScholarPlan's autonomy is bounded in several ways:
+**What.** Autonomy is bounded by a three-action schema, refused repeat
+searches, a 20-step budget and verdicts that fail closed. The tutor noted that
+repeated rejection could still exhaust the budget. I agreed, but did not build
+a per-subtask cap.
 
-- a strict schema allows only three Planner actions;
-- repeated searches are refused;
-- runs stop after 20 steps;
-- costs are tracked;
-- unclear Critic verdicts fail closed.
+**So what.** The bounds that worked were enforced in code, not requested in a
+prompt, as LLM-Modulo argues (Kambhampati *et al.*, 2024). But the budget bounds
+cost, not behaviour: every run stopped at step 3, so only a forced test
+exercised it. Failing closed also costs coverage, the safety–usefulness tension
+Amodei *et al.* (2016) describe. Skipping the cap under deadline pressure was a
+mistake.
 
-The tutor pointed out that a subtask the Critic keeps rejecting could still use
-up the whole budget. I agreed, but did not build the per-subtask cap.
+**Now what.** Every safety rule will be an invariant with a test that triggers
+it, and resource bounds will be separate from behaviour bounds.
 
-**So what.** The constraints that worked were enforced by code, not requested in
-a prompt. The schema makes inventing an action impossible rather than
-discouraged, which is the LLM-Modulo position (Kambhampati *et al.*, 2024). But
-the 20-step budget bounds cost, not behaviour, and every evaluation run stopped
-at step 3. The real kill switch was only exercised by a forced-rejection test.
-Failing closed also has a price: each false rejection reduces coverage. This is
-the tension between safety and usefulness that Amodei *et al.* (2016) describe.
-Leaving the cap unbuilt was a prioritisation choice I made under deadline
-pressure, and it is the gap a reviewer would find first.
+## 3. Bias in autonomous decision-making: bias from retrieval
 
-**Now what.** I will write every safety rule as a testable invariant with a test
-that triggers it, as I did for repeated searches. I will keep resource bounds
-separate from behaviour bounds in future designs.
+**What.** Recall of well-known papers swung between 20% and 55%, because the
+APIs rank recent papers above landmark ones. I added a citation bonus to
+compensate.
 
-## Case study 3 — Bias in autonomous decision-making: bias from retrieval
+**So what.** The bias came from retrieval, not the model, and decides whose
+work is seen. My fix added the opposite bias: rewarding cited papers is the
+Matthew effect (Merton, 1968), a popularity bias (Mehrabi *et al.*, 2021). Even
+my "well-known papers" were my own canon. A review can pass 99% of claim checks
+and still be skewed, because the Critic checks support, not balance.
 
-**What.** Recall of well-known papers swung between 20% and 55%. For one question
-it fell from 5 of 5 to 1 of 5. The APIs now rank many 2026 papers above older
-landmark ones, and the Planner chooses different queries each run. To
-compensate, I had added a citation bonus to the Processor's ranking.
-
-**So what.** The bias came from retrieval and ranking, not from the language
-model, and it decides whose work gets seen. My fix brought in the opposite bias.
-Rewarding papers that are already cited is the Matthew effect (Merton, 1968), a
-form of popularity bias in Mehrabi *et al.*'s (2021) terms. My evaluation was
-biased too, because the "well-known papers" were my own choice of canon. Most
-importantly, a review can pass 99% of claim checks and still be skewed. The
-Critic checks support, not balance, so this bias passes the safety gate unseen.
-
-**Now what.** I will measure what an agent retrieves (year, venue, citations),
-not only its recall. I will report the source mix in the output itself, and
-record ranking rules as design decisions with ethical weight.
+**Now what.** I will measure and report the mix an agent retrieves (year,
+venue, citations), and treat ranking rules as ethical decisions.
 
 ## References
 

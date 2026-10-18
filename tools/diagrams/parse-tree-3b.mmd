@@ -1,0 +1,20 @@
+flowchart TD
+    bS[S] --> bNP1[NP] & bVP[VP]
+    bNP1 --> bDT1[DT] & bNN1[NN]
+    bDT1 --> b1([The])
+    bNN1 --> b2([man])
+    bVP --> bV[VBD] & bNP2[NP]
+    bV --> b3([saw])
+    bNP2 --> bNP4[NP] & bPP[PP]
+    bNP4 --> bDT2[DT] & bNN2[NN]
+    bDT2 --> b4([the])
+    bNN2 --> b5([dog])
+    bPP --> bIN[IN] & bNP3[NP]
+    bIN --> b6([with])
+    bNP3 --> bDT3[DT] & bNN3[NN]
+    bDT3 --> b7([the])
+    bNN3 --> b8([telescope])
+    classDef word fill:#fff,stroke:#999;
+    classDef pp fill:#ffe9b3,stroke:#c48a00;
+    class b1,b2,b3,b4,b5,b6,b7,b8 word;
+    class bPP pp;

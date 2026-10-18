@@ -1,0 +1,19 @@
+flowchart TD
+    aS[S] --> aNP1[NP] & aVP[VP]
+    aNP1 --> aDT1[DT] & aNN1[NN]
+    aDT1 --> a1([The])
+    aNN1 --> a2([man])
+    aVP --> aV[VBD] & aNP2[NP] & aPP[PP]
+    aV --> a3([saw])
+    aNP2 --> aDT2[DT] & aNN2[NN]
+    aDT2 --> a4([the])
+    aNN2 --> a5([dog])
+    aPP --> aIN[IN] & aNP3[NP]
+    aIN --> a6([with])
+    aNP3 --> aDT3[DT] & aNN3[NN]
+    aDT3 --> a7([the])
+    aNN3 --> a8([telescope])
+    classDef word fill:#fff,stroke:#999;
+    classDef pp fill:#ffe9b3,stroke:#c48a00;
+    class a1,a2,a3,a4,a5,a6,a7,a8 word;
+    class aPP pp;

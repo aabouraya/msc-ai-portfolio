@@ -5,17 +5,10 @@ module: intelligent-agents
 nav_exclude: true
 permalink: /modules/intelligent-agents/evidence/tutor-feedback/
 summary: >-
-  The tutor's feedback on the team design proposal, reproduced verbatim, with my
-  full response to each improvement point.
+  The tutor's feedback on the team design proposal, reproduced unchanged.
 ---
 
-Supporting evidence for the [Project evaluation](../../evaluation/).
-
-## Tutor feedback
-
 <p class="post-meta">Development Team Project: Project Report · team submission, September 2026</p>
-
-The feedback is reproduced verbatim.
 
 <div class="post" markdown="1">
 
@@ -78,49 +71,3 @@ academic standard of presentation.
 
 </div>
 
-## My response
-
-The feedback is on the design document only. Below, each point is answered for
-the design first. A short note then says where the point stands in the
-[implementation](../../artefacts/#agent-based-system), which was built afterwards
-from this design.
-
-**1. A static structural view.** I agree. The design has activity and sequence
-diagrams, which show behaviour, but nothing shows structure: which data the
-blackboard holds and which agent may read or write each part. That is the
-permission model the proposal claims from Gaia (section [4](../team-proposal/#development-approach)) but never draws, so a class
-diagram would have made that claim checkable.
-
-*In the implementation:* done on 14 October 2026. A UML class diagram and an
-entity-relationship diagram of the eight blackboard tables were added to the
-repository and checked against the code. The agent-to-table permissions, which
-neither diagram shows, are traced in a table beside them. All three are under
-[Structure: classes and blackboard tables](../../artefacts/#structure-classes-and-blackboard-tables).
-
-**2. Measurable evaluation targets.** I agree. Section [4](../team-proposal/#development-approach) describes "an evaluation
-harness of fixed research questions with known relevant sources, measuring
-source recall and Critic pass rate". But it does not say which questions, what
-recall would count as success, or how accurate the Critic must be. Without
-numbers, any result could be reported as acceptable.
-
-*In the implementation:* most targets were set.
-
-- **Test queries:** 4 fixed questions with 5 known papers each.
-- **Deduplication thresholds:** a 0.95 cosine near-duplicate threshold and a
-  0.25 relevance floor.
-- **Critic target:** at least 11 of 13 labelled claims correct, with a balanced
-  accuracy of at least 0.70.
-
-The Critic target is not split into precision and recall, though, and recall
-of known papers had no target. That is the metric that later varied from 20% to
-55%.
-
-**3. Fallback rules for repeated rejection.** I agree. The design's only bound
-is the 20-step budget for the whole run. A subtask the Critic keeps rejecting
-can use up that budget, and the design leaves the decision to give up to the
-Planner. That contradicts the proposal's own LLM-Modulo argument (section [3](../team-proposal/#design-decisions)) that
-control should not depend on the LLM. The tutor's rule (three attempts, then
-mark the subtask unresolvable) is simple, testable and outside the model.
-
-*In the implementation:* partly addressed. The Planner is refused if it repeats
-a query, and it can abandon a subtask, but there is still no per-subtask cap.

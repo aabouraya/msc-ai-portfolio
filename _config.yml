@@ -29,6 +29,7 @@ exclude:
   - .jekyll-cache
   # Source code and raw artefacts are browsed on GitHub, not rendered as pages.
   - artefacts
+  - tools
   # Not part of the Intelligent Agents submission; kept for later modules.
   - about.md
   - skills.md

@@ -1,72 +1,109 @@
 ---
-title: Final Project Evaluation
-short_title: Project evaluation
+title: "Final Project: ScholarPlan"
+short_title: Final project
 module: intelligent-agents
-nav_order: 4
+nav_order: 2
 permalink: /modules/intelligent-agents/evaluation/
 summary: >-
-  A critical evaluation of ScholarPlan across both phases: the team design
-  (week 7) and my implementation (week 11).
+  My build of the team design (week 11), evaluated against that design
+  (week 7). Evidences LO1, LO2 and LO3.
 ---
 
-<p class="meta"><span class="muted">Evidences LO1, LO2, LO3</span></p>
+## What was built
 
-This page judges the [team design](../artefacts/#scholarplan--team-design-proposal)
-against my [implementation](../artefacts/#agent-based-system).
+**Code:** [github.com/aabouraya/scholar_plan](https://github.com/aabouraya/scholar_plan/tree/c66190e),
+as presented. **Presentation:**
+[slides](https://docs.google.com/presentation/d/1cRRCG0g3pqrjCc7xxqDpI_tBM-J0sCwP/edit?usp=sharing),
+demo on slide 6.
+
+<figure>
+  <a href="{{ '/assets/img/intelligent-agents/scholarplan-implementation.png' | relative_url }}"><img src="{{ '/assets/img/intelligent-agents/scholarplan-implementation.png' | relative_url }}" alt="Implementation architecture: a Controller above a shared SQLite blackboard. The deliberative Planner sits on one side; the reactive Retriever, Processor, Critic and Archivist on the other. Agents connect only to the blackboard."></a>
+  <figcaption>Agents coordinate only through the blackboard.</figcaption>
+</figure>
+
+| Agent | Kind | Role |
+| --- | --- | --- |
+| Planner | Deliberative, GPT-5-mini | ReAct loop: `search`, `abandon` or `finish` |
+| Retriever | Reactive | Searches arXiv, OpenAlex, Crossref |
+| Processor | Reactive, GPT-5-mini | Ranks sources; summarises into claims |
+| Critic | Reactive, Llama-3.3-70B | Checks claims against abstracts |
+| Archivist | Reactive | Exports report, BibTeX, trace |
+
+### Structure
+
+<figure>
+  <a href="{{ '/assets/img/intelligent-agents/scholarplan-class-diagram.png' | relative_url }}"><img src="{{ '/assets/img/intelligent-agents/scholarplan-class-diagram.png' | relative_url }}" alt="UML class diagram: the Planner, Retriever, Processor, Critic and Archivist classes implement an Agent protocol with can_act and act. The controller creates the Blackboard and asks who can act. Each agent reads and writes the Blackboard class, and uses supporting modules: llm, sources, citations, index, embeddings and http_cache."></a>
+  <figcaption>Every agent implements one two-method protocol.</figcaption>
+</figure>
+
+<figure>
+  <a href="{{ '/assets/img/intelligent-agents/scholarplan-erd.png' | relative_url }}"><img src="{{ '/assets/img/intelligent-agents/scholarplan-erd.png' | relative_url }}" alt="Entity-relationship diagram of the eight blackboard tables. A subtask finds many sources and groups many summaries; a source is summarised in many summaries; a summary contains many claims; feedback is about a subtask or a summary. The run, thoughts and synthesis tables stand alone."></a>
+  <figcaption>Blackboard tables. A row's status triggers the next agent.</figcaption>
+</figure>
+
+### Results
+
+[Test report](https://github.com/aabouraya/scholar_plan/blob/c66190e/docs/testing/test_report.md):
+
+| Test | Result |
+| --- | --- |
+| Unit and component | 67 passed |
+| Integration, live APIs | 3 passed |
+| Critic, 13 hand-labelled claims | 13 correct |
+| Critic against MiniCheck | Agreed on 192 claims |
+| End to end, 4 questions | 4 finished; 99% of claims passed; $0.03 per run |
+
+<figure>
+  <a href="{{ '/assets/img/intelligent-agents/scholarplan-eval-run.png' | relative_url }}"><img src="{{ '/assets/img/intelligent-agents/scholarplan-eval-run.png' | relative_url }}" alt="Terminal output of the end-to-end evaluation on 4 questions, 3 October 2026: recall retrieved 20%, recall cited 15%, claim pass rate 99%, 3.0 steps, $0.030 per run."></a>
+  <figcaption>Evaluation run, 3 October 2026.</figcaption>
+</figure>
+
+### Legal, ethical and professional practice
+
+- **Provenance:** only verified claims reach the report, with sources.
+- **Fair API use:** rate limits, retries and caching.
+- **Secrets:** keys in a git-ignored `.env`.
+- **Cost:** a step budget and cost tracking.
 
 ## What the design got right
 
-**The architecture held.** The hybrid structure (a deliberative ReAct Planner,
-reactive specialists and a shared blackboard) was built as designed and never
-needed restructuring. Because the controller only asks "who can act?", agents
-never call each other. Adding MiniCheck as a second checker and adding offline
-search touched no other agent. This is the decoupling Hayes-Roth (1985) claims
-for blackboard systems, and it was what made four short iterations practical.
+**The architecture held.** The hybrid design was never restructured. Adding MiniCheck touched no
+other agent: the decoupling Hayes-Roth (1985) claims for blackboards.
 
-**The independent Critic was the most valuable decision.** Checking claims with
-a different model family from the one that wrote them gave 13 of 13 correct
-verdicts on labelled claims and full agreement with MiniCheck on 192 claims. In
-one live run it also rejected a weak synthesis, which the Planner then redrafted.
+**The independent Critic was the best decision.** A different model family
+from the writer produced the results above, and live it forced a redraft of a
+weak synthesis.
 
-## Where the design did not hold
+## Where it did not hold
 
-Six design decisions changed during the build
-([changes from the design](../artefacts/#what-changed-from-the-design)). Three of
-them were forced by the environment rather than chosen. The local Llama Critic
-needed about 40 GB of memory on a 32 GB laptop, GPT-5-nano had no quota, and
-GPT-5-mini would not accept a low temperature. The design assumed resources that
-nobody had checked. A one-day feasibility test before design sign-off would have
-found all three. Deployment constraints shape the architecture, so they belong
-in the design, not after it.
+| Design | Built | Why |
+| --- | --- | --- |
+| Local Llama Critic | Azure only | Needs 40 GB; laptop has 32 |
+| Low temperature | Strict JSON schemas | GPT-5-mini allows only its default |
+| GPT-5-nano fallback | None | No quota |
+| Full text | Abstracts | Full text often unavailable |
+| 50 labelled claims | 13 | Time |
+| MiniCheck as oracle | Second opinion | Gives no reason to re-plan from |
 
-## Weaknesses in my implementation
+Three changes came from resources nobody checked; a one-day feasibility test
+would have found them. Of the tutor's improvement points, I added the class
+diagram, set a Critic target but none for recall, and did not build the
+three-attempt cap ([case study 2](../case-studies/)).
 
-1. **The evaluation cannot support the claim I most wanted to make.** Recall of
-   well-known papers was 25%, 55%, 50% and 20% across four runs, with one run per
-   setting, so I was tuning against noise. The tutor's second improvement point
-   asked for measurable targets. I set one for the Critic, which passed, and none
-   for recall, which was hard. That is a bias in how I evaluated my own work.
-2. **The guarantee is narrower than the presentation implied.** "Every claim is
-   verified" means verified against an abstract. The Critic checks support, not
-   coverage, so a fully verified review can still miss the key papers.
-3. **Control still partly depends on the LLM.** The proposal argued, after
-   Kambhampati *et al.* (2024), that control should sit outside the model. Yet
-   deciding to give up on a subtask is still left to the Planner. The tutor's
-   per-subtask cap, which I agreed with, was not built.
-4. **Rejections were barely tested.** Only one real claim was rejected, so the
-   Critic's ability to catch errors rests on 13 labelled cases.
+## Weaknesses
 
-## Overall judgement
+1. **The evaluation cannot support my main claim.** Recall was 25%, 55%, 50%
+   and 20%, one run per setting, so I tuned against noise
+   ([case study 3](../case-studies/)).
+2. **"Every claim is verified"** means against an abstract, and checks support,
+   not coverage.
+3. **Rejections were barely tested:** only one real claim was rejected.
 
-The architecture and the engineering process succeeded. Four gated iterations
-and test-first fixes for eleven recorded issues produced a system that finished
-every evaluation run for about $0.03. The evaluation method is the weakest part.
-If I built it again, I would:
+## Judgement
 
-- set a recall target before tuning, not after;
-- run each question several times and report the spread;
-- add the three-attempt cap per subtask;
-- build the 50-claim labelled set the design promised, with more false claims.
+The engineering succeeded; the evaluation method is the weakest part. Next
+time I would set a recall target before tuning, repeat each question, build the
+cap and label 50 claims.
 
 ## References
 
@@ -76,10 +113,5 @@ Hayes-Roth, B. (1985) ‘A blackboard architecture for control’, *Artificial
 Intelligence*, 26(3), pp. 251–321. Available at:
 <https://doi.org/10.1016/0004-3702(85)90063-3> (Accessed: 2 September 2026).
 
-Kambhampati, S., Valmeekam, K., Guan, L., Verma, M., Stechly, K., Bhambri, S.,
-Saldyt, L. and Murthy, A. (2024) ‘Position: LLMs can’t plan, but can help
-planning in LLM-Modulo frameworks’, in *Proceedings of the 41st International
-Conference on Machine Learning (ICML 2024)*. Vienna: PMLR 235. Available at:
-<https://arxiv.org/abs/2402.01817> (Accessed: 2 September 2026).
 
 </div>

@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant A as Alice (procurement)
+    participant B as Bob (stock control)
+    Note over A,B: Every message carries<br/>:language KIF  :ontology warehouse-stock
+    A->>B: ask-one  :reply-with stock-q1<br/>(stock-level tv-50-inch ?units)
+    B-->>A: tell  :in-reply-to stock-q1<br/>(stock-level tv-50-inch 25)
+    A->>B: ask-one  :reply-with spec-q1<br/>(hdmi-slots tv-50-inch ?count)
+    B-->>A: tell  :in-reply-to spec-q1<br/>(hdmi-slots tv-50-inch 4)

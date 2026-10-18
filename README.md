@@ -31,7 +31,7 @@ decoration.
 
 **A new module** — add an entry to `_data/modules.yml` (slug, title, status,
 term, summary, outcomes, skills), then create `modules/<slug>/index.md`. It
-appears in the card grids automatically. Copy the seven pages from
+appears in the card grids automatically. Copy the section pages from
 `modules/intelligent-agents/` once the module starts.
 
 **A new section page in a module** — set `module: <slug>` and a `nav_order` in the

@@ -390,3 +390,28 @@ main blockquote {
   color: var(--text-muted);
 }
 .site-footer p { margin: .2rem 0; }
+
+/* Two figures side by side (formative activities: alternative parse trees). */
+.prose > .figure-pair { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.prose > .figure-pair figure { margin: 0; }
+.prose > .figure-pair img { width: 100%; height: auto; }
+@media (max-width: 720px) { .prose > .figure-pair { grid-template-columns: 1fr; } }
+
+/* Overview: AI acknowledgement, a quieter sibling of the .learned callout. */
+.ack {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--text-muted);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  padding: 1rem 1.25rem;
+}
+.ack-title {
+  margin: 0 0 .4rem;
+  font-size: .8rem;
+  font-weight: 650;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.ack p:last-child { margin: 0; font-size: .92rem; }
+.prose > .ack { grid-column: 1 / -1; margin: 1.5rem 0 0; }

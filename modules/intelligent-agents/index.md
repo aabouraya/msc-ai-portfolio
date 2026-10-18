@@ -5,36 +5,47 @@ nav_order: 0
 short_title: Overview
 permalink: /modules/intelligent-agents/
 summary: >-
-  Agent architectures, multi-agent coordination and the design and
-  implementation of an agent-based system, with attention to the legal, social,
-  ethical and professional context.
+  Individual e-portfolio, July–October 2026.
 ---
 
-| The assignment asks for | Where |
-| --- | --- |
-| Outputs from the exercises: coding scripts, agent implementations, system designs | [Artefacts](artefacts/) |
-| Contributions to the online forums | [Discussions](discussions/) |
-| My contribution to the team project | [Team](team/) |
-| Critical evaluation of the final project: design (week 7) and implementation (week 11) | [Project evaluation](evaluation/) |
-| Three reflective case studies | [Case studies](case-studies/) |
-| Reflective piece, also submitted to Turnitin | [Reflection](reflection/) |
-| Supporting evidence, reproduced in full | [Evidence](evidence/) |
+The module covers how autonomous software agents are designed, reason,
+communicate and work together, and how to build them responsibly.
 
-## Word count
+<ul class="cards">
+  <li class="card">
+    <h3><a href="team-project/">Team project</a></h3>
+    <p>Our design proposal and my part.</p>
+  </li>
+  <li class="card">
+    <h3><a href="evaluation/">Final project</a></h3>
+    <p>What I built, judged against the design.</p>
+  </li>
+  <li class="card">
+    <h3><a href="formative-activities/">Formative activities</a></h3>
+    <p>A KQML dialogue and parse trees.</p>
+  </li>
+  <li class="card">
+    <h3><a href="discussions/">Discussions</a></h3>
+    <p>Lessons from two forums.</p>
+  </li>
+  <li class="card">
+    <h3><a href="case-studies/">Case studies</a></h3>
+    <p>Explainability, safety and bias.</p>
+  </li>
+  <li class="card">
+    <h3><a href="reflection/">Reflection</a></h3>
+    <p>How the module changed my practice.</p>
+  </li>
+  <li class="card">
+    <h3><a href="evidence/">Appendix</a></h3>
+    <p>Original proposal and tutor feedback.</p>
+  </li>
+</ul>
 
-Prose only; tables, code, captions and references are excluded.
-
-<!-- wc:start -->
-
-| Page | Words |
-| --- | --: |
-| Overview | 9 |
-| Artefacts | 133 |
-| Discussions | 211 |
-| Team | 41 |
-| Project evaluation | 469 |
-| Case studies | 616 |
-| **Total** (limit 1,500) | **1,479** |
-| [Reflection](reflection/) (limit 1,000) | **871** |
-
-<!-- wc:end -->
+<div class="ack">
+  <p class="ack-title">AI Acknowledgement</p>
+  <p>This e-portfolio and all linked artifact pages were proofread, refined, and
+  formatted with the assistance of Grammarly and Claude. All analyses,
+  interpretations, conclusions, and recommendations represent my own independent
+  work.</p>
+</div>

@@ -5,36 +5,12 @@ module: intelligent-agents
 nav_exclude: true
 permalink: /modules/intelligent-agents/evidence/team-proposal/
 summary: >-
-  The team's design proposal, reproduced verbatim as submitted in September 2026.
+  The team's design proposal, reproduced unchanged.
 ---
 
-Appendix to the [Artefacts](../../artefacts/#design-and-modelling) and [Team](../../team/) pages. This was a team submission (Group A); how the work was divided is on the Team page.
-
-**The brief.** The Development Team Project asked each team to act as software
-consultants and design an LLM-powered planning agent for academic research and
-information gathering. The agents had to find documents or online content,
-process or reason over them, and do something useful with the result. One report
-was submitted per team, due 7 September 2026, with a 1,000-word limit. It is worth
-20% of the module mark.
-
-Our team (Group A: Yasmin, Adel A. and me) proposed **ScholarPlan**. It is a
-hybrid multi-agent system in which an LLM Planner breaks a research goal into
-subtasks. Four specialised agents then retrieve, summarise, verify and archive
-the evidence, coordinating only through a shared blackboard. The table shows how
-each requirement in the brief is met.
-
-| The brief asks the agents to… | ScholarPlan agent | Where in the proposal |
-| --- | --- | --- |
-| Plan the work | Planner (deliberative, ReAct loop) | Sections [3](#design-decisions) and [5](#anticipated-challenges) |
-| Find documents or online content | Retriever (arXiv, OpenAlex, Crossref) | Sections [2.1](#requirements) and [6](#tools-libraries-models-and-environments) |
-| Process or reason over the data | Processor and Critic (claim-level verification) | Sections [3](#design-decisions) and [5](#anticipated-challenges) |
-| Do something meaningful with the result | Archivist (report, BibTeX, vector index, trace) | Sections [2.1](#requirements) and [7](#conclusion) |
-
-The proposal is reproduced verbatim below, including the figures as submitted.
-Only the heading levels and line wrapping are changed so that it fits this page.
-How the work was divided is recorded on the [Team](../../team/) page.
-The tutor's feedback on the proposal, with my response, is in the
-[evidence appendix](../tutor-feedback/).
+The Group A design proposal as submitted on 7 September 2026, unchanged except
+for heading levels and line wrapping. My part in it is on the
+[Team project](../../team-project/) page.
 
 <div class="post" markdown="1">
 
@@ -305,15 +281,3 @@ Microsoft (2026) Azure Retail Prices API. Available at:
 
 </div>
 
-## What this demonstrates
-
-- **LO1.** The proposal chooses an architecture and justifies it against the
-  alternatives: hybrid deliberative and reactive agents over a single LLM, and
-  blackboard coordination over direct calls or central orchestration.
-- **LO2.** It addresses the known risks of LLM agents (unreliable planning,
-  noisy data and hallucinated claims) with specific controls. These are
-  schema-constrained subtasks, an independent Critic from a different model
-  family, and a bounded step budget.
-- **LO3.** It selects tools by evidence: models by benchmark and cost, keyless
-  APIs for traceable provenance, and plain Python over LangChain so the ReAct
-  loop stays inspectable.
