@@ -5,7 +5,7 @@ module: intelligent-agents
 nav_order: 3
 permalink: /modules/intelligent-agents/formative-activities/
 summary: >-
-  My answers, and what each taught me. Evidences LO1 and LO2.
+  My answers, and what each taught me.
 ---
 
 {% assign img = '/assets/img/intelligent-agents/formative/' %}

@@ -6,7 +6,7 @@ nav_order: 2
 permalink: /modules/intelligent-agents/evaluation/
 summary: >-
   My build of the team design (week 11), evaluated against that design
-  (week 7). Evidences LO1, LO2 and LO3.
+  (week 7).
 ---
 
 ## What was built

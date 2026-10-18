@@ -5,8 +5,7 @@ module: intelligent-agents
 nav_order: 1
 permalink: /modules/intelligent-agents/team-project/
 summary: >-
-  The Group A design proposal, weeks 1–7, and my part in it. Evidences LO1 and
-  LO4.
+  The Group A design proposal, weeks 1–7, and my part in it.
 ---
 
 [Proposal](../evidence/team-proposal/) · [Tutor feedback](../evidence/tutor-feedback/)

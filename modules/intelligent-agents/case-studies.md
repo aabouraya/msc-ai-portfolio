@@ -6,7 +6,7 @@ nav_order: 6
 permalink: /modules/intelligent-agents/case-studies/
 summary: >-
   Three incidents from building ScholarPlan, each in Rolfe et al.'s (2001) What,
-  So what, Now what. Evidences LO2 and LO3.
+  So what, Now what.
 ---
 
 Evidence:

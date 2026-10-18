@@ -6,7 +6,6 @@ nav_order: 4
 permalink: /modules/intelligent-agents/discussions/
 summary: >-
   What I learned from each forum discussion, with my posts as screenshots.
-  Evidences LO1 and LO4.
 ---
 
 ## Discussion 1 — Agent-based systems in organisations
@@ -16,12 +15,27 @@ summary: >-
 <div class="learned" markdown="1">
 <p class="learned-title">What I learned</p>
 
-- **Reliability is an architecture problem.** Isaac showed errors spread at
-  handoffs between agents, so verification belongs there: ScholarPlan's Critic.
-- **Autonomy must be bounded.** Panagiotis sharpened my case for oversight:
-  independence should match the cost of failure.
-- **Every fix has a failure mode.** An LLM added for usability brought
-  hallucination.
+**From my research**
+
+- Reactive and BDI agents follow predefined plans, so they struggle when the
+  environment changes. LLMs add reasoning, task decomposition and memory.
+- That flexibility costs reliability: hallucination, cascading failures and
+  miscoordination between agents, which become governance risks for
+  organisations.
+
+**From the discussion**
+
+- **Reliability is an architecture problem.** Isaac showed that errors spread
+  at handoffs between agents, so outputs should be verified there, processes
+  evaluated as well as outcomes, and agents tested in a sandbox before going
+  live.
+- **Autonomy must be bounded.** Kapinga argued that autonomy does not make an
+  agent trustworthy. Panagiotis added that an agent's independence should
+  match the cost of its failure, and Imoh that humans keep judgement and
+  accountability.
+- **Control works best as a hybrid.** In Luis's thread, an LLM that removes a
+  usability barrier brings hallucination with it, so it needs guardrails. The
+  thread settled on central governance with decentralised execution.
 
 </div>
 
@@ -51,12 +65,26 @@ summary: >-
 <div class="learned" markdown="1">
 <p class="learned-title">What I learned</p>
 
-- **I overstated my evidence.** Lara showed deepfakes were *used* in elections,
-  not shown to *change* results. My summary corrected this.
-- **An intention is not a safeguard.** Isaac turned my "careful oversight" into
-  checks at collection, evaluation and distribution.
-- **Every safeguard has a limit.** A watermark can confirm machine generation,
-  never human authorship.
+**From my research**
+
+- Generative AI's main risks are copyright, because models train on scraped
+  work without consent, and misinformation, because synthetic media is
+  realistic enough to deceive.
+- Both come from the same strength: models learn from vast, uncurated data and
+  reproduce its patterns convincingly.
+
+**From the discussion**
+
+- **I overstated my evidence.** Lara showed that deepfakes have been *used* in
+  elections, not shown to *change* results. The defensible harm is lost trust
+  in authentic information.
+- **Oversight needs specific safeguards.** Isaac turned my "careful oversight"
+  into checks at each stage: record data provenance before training, test
+  outputs before deployment, and do not rely on labels alone at distribution.
+- **Every safeguard has a trade-off.** Researching watermarking for my reply,
+  I found it must balance invisibility, speed and resistance to removal. Isaac
+  added that a watermark can confirm machine generation, never human
+  authorship.
 
 </div>
 
