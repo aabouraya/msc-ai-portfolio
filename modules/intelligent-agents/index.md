@@ -8,8 +8,12 @@ summary: >-
   Individual e-portfolio, July–October 2026.
 ---
 
-The module covers how autonomous software agents are designed, reason,
-communicate and work together, and how to build them responsibly.
+The module studies intelligent agents, software that perceives its environment
+and acts towards its goals: logic-based reasoning, deliberative, reactive and
+hybrid architectures, agent communication in KQML, natural language processing
+and deep learning. It then applies them in the design and build of an
+agent-based system, with attention to the legal, social, ethical and
+professional issues of deploying one.
 
 <ul class="cards">
   <li class="card">
