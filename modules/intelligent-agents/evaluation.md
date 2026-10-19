@@ -83,12 +83,12 @@ weak synthesis.
 | GPT-5-nano fallback | None | No quota |
 | Full text | Abstracts | Full text often unavailable |
 | 50 labelled claims | 13 | Time |
-| MiniCheck as oracle | Second opinion | Gives no reason to re-plan from |
+| MiniCheck with the Llama Critic | Testing only | Gives no reason to re-plan from |
 
 Three changes came from resources nobody checked; a one-day feasibility test
 would have found them. Of the tutor's improvement points, I added the class
 diagram, set a Critic target but none for recall, and did not build the
-three-attempt cap ([case study 2](../case-studies/)).
+three-attempt cap.
 
 ## Weaknesses
 

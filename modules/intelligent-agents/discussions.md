@@ -17,22 +17,16 @@ summary: >-
 
 **From my research**
 
-- Reactive and BDI agents follow predefined plans, so they struggle when the
-  environment changes. LLMs add reasoning, task decomposition and memory.
-- That flexibility costs reliability: hallucination, cascading failures and
-  miscoordination between agents, which become governance risks for
-  organisations.
+- Reactive and BDI agents follow fixed plans and struggle with change. LLMs add
+  reasoning, task decomposition and memory, at a cost in reliability and
+  governance.
 
 **From the discussion**
 
 - **Reliability is an architecture problem.** Isaac showed that errors spread
-  at handoffs between agents, so outputs should be verified there, processes
-  evaluated as well as outcomes, and agents tested in a sandbox before going
-  live.
-- **Autonomy must be bounded.** Kapinga argued that autonomy does not make an
-  agent trustworthy. Panagiotis added that an agent's independence should
-  match the cost of its failure, and Imoh that humans keep judgement and
-  accountability.
+  at handoffs, so verify there and test agents in a sandbox first.
+- **Autonomy must be bounded.** Panagiotis argued that independence should
+  match the cost of failure, and Imoh that humans keep accountability.
 - **Control works best as a hybrid.** In Luis's thread, an LLM that removes a
   usability barrier brings hallucination with it, so it needs guardrails. The
   thread settled on central governance with decentralised execution.
@@ -67,11 +61,9 @@ summary: >-
 
 **From my research**
 
-- Generative AI's main risks are copyright, because models train on scraped
-  work without consent, and misinformation, because synthetic media is
-  realistic enough to deceive.
-- Both come from the same strength: models learn from vast, uncurated data and
-  reproduce its patterns convincingly.
+- Generative AI's main risks are copyright, from training on scraped work, and
+  misinformation, from realistic synthetic media. Both come from learning on
+  vast, uncurated data.
 
 **From the discussion**
 

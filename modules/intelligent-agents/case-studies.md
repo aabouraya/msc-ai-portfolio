@@ -15,51 +15,57 @@ and [test report](https://github.com/aabouraya/scholar_plan/blob/c66190e/docs/te
 
 ## 1. Explainable decisions: an explanation the system needed
 
-**What.** MiniCheck outscores Llama on LLM-AggreFact (77.4 against 74.5), but
-I kept Llama as the Critic: MiniCheck answers only yes or no, and the Planner
-re-plans from the Critic's written reason.
+**What.** I planned to use MiniCheck with Llama in the Critic, since MiniCheck
+scores higher on the LLM-AggreFact benchmark (77.4 against 74.5). But MiniCheck
+only answers yes or no, and the Planner needs a written reason to re-plan. So
+Llama makes the Critic's decisions, and MiniCheck is used only for testing.
 
-**So what.** The explanation's main reader is another agent, so it is
-functional. Its reasons are contrastive ("the claim says *eliminates*; the
-source says *reduces*"), the form Miller (2019) finds most useful. I traded
-accuracy for explainability. Yet a stated reason may not be what caused the
-verdict (Turpin *et al.*, 2023); the trace linking each claim to its source can
-be checked rather than trusted.
+**So what.** The explanation's main reader is another agent: without a reason,
+the re-planning loop has nothing to act on. I chose the lower-scoring model for
+the decisions at no real cost, as both models agreed on every test claim. But a
+stated reason may not be what caused a verdict (Turpin *et al.*, 2023), so the
+trace linking each claim to its source matters more.
 
-**Now what.** I will treat "who uses this explanation?" as a requirement, and
-test that reasons point to real source text.
+**Now what.** In future designs, I will decide early who reads each
+explanation, and choose models that can provide it. I will also test that each
+reason quotes text that really appears in the source, instead of trusting it.
 
 ## 2. AI safety constraints: bounds outside the model
 
-**What.** Autonomy is bounded by a three-action schema, refused repeat
-searches, a 20-step budget and verdicts that fail closed. The tutor noted that
-repeated rejection could still exhaust the budget. I agreed, but did not build
-a per-subtask cap.
+**What.** Four rules bound the system: the Planner has three actions, repeated
+searches are refused, a run stops after 20 steps, and unclear verdicts count as
+rejections.
 
-**So what.** The bounds that worked were enforced in code, not requested in a
-prompt, as LLM-Modulo argues (Kambhampati *et al.*, 2024). But the budget bounds
-cost, not behaviour: every run stopped at step 3, so only a forced test
-exercised it. Failing closed also costs coverage, the safety–usefulness tension
-Amodei *et al.* (2016) describe. Skipping the cap under deadline pressure was a
-mistake.
+**So what.** The rules that worked were enforced in code, not requested in a
+prompt, as LLM-Modulo argues (Kambhampati *et al.*, 2024). But the step budget
+limits cost, not behaviour: every run finished in 3 steps, so only a test
+exercised it. Rejecting unclear verdicts is safer but loses valid claims, the
+safety–usefulness trade-off Amodei *et al.* (2016) describe.
 
-**Now what.** Every safety rule will be an invariant with a test that triggers
-it, and resource bounds will be separate from behaviour bounds.
+**Now what.** Every safety rule will get a test that triggers it, and cost
+limits will stay separate from behaviour limits.
 
 ## 3. Bias in autonomous decision-making: bias from retrieval
 
-**What.** Recall of well-known papers swung between 20% and 55%, because the
-APIs rank recent papers above landmark ones. I added a citation bonus to
-compensate.
+**What.** I tested ScholarPlan on four questions, each with five well-known
+papers it should find. It found between 20% and 55% of them, a measure called
+recall. The Planner searched differently each run, and the APIs ranked many
+2026 papers above older landmark ones. My ranking already gave highly cited
+papers a small boost, to favour influential work. When recall was low, I made
+that boost apply to arXiv papers too.
 
-**So what.** The bias came from retrieval, not the model, and decides whose
-work is seen. My fix added the opposite bias: rewarding cited papers is the
-Matthew effect (Merton, 1968), a popularity bias (Mehrabi *et al.*, 2021). Even
-my "well-known papers" were my own canon. A review can pass 99% of claim checks
-and still be skewed, because the Critic checks support, not balance.
+**So what.** The recency skew came from the search, not the language model, yet
+it decided whose work was included. The boost pushed the other way and brought
+its own bias: favouring papers that are already popular is the Matthew effect
+(Merton, 1968), a popularity bias (Mehrabi *et al.*, 2021). I had treated it as
+a technical setting, not an ethical choice. The test was biased too: I chose
+the five papers for each question myself, so recall measured how closely the
+system matched my own view of which papers matter. And a review can pass 99% of
+claim checks and still be one-sided, because the Critic checks that claims are
+supported, not that sources are balanced.
 
-**Now what.** I will measure and report the mix an agent retrieves (year,
-venue, citations), and treat ranking rules as ethical decisions.
+**Now what.** I will make agents report their mix of sources, by year, venue
+and citations, and treat ranking rules as ethical decisions.
 
 ## References
 
@@ -84,9 +90,6 @@ Merton, R.K. (1968) ‘The Matthew effect in science’, *Science*, 159(3810),
 pp. 56–63. Available at: <https://doi.org/10.1126/science.159.3810.56>
 (Accessed: 15 October 2026).
 
-Miller, T. (2019) ‘Explanation in artificial intelligence: Insights from the
-social sciences’, *Artificial Intelligence*, 267, pp. 1–38. Available at:
-<https://doi.org/10.1016/j.artint.2018.07.007> (Accessed: 15 October 2026).
 
 Rolfe, G., Freshwater, D. and Jasper, M. (2001) *Critical reflection in nursing
 and the helping professions: a user’s guide*. Basingstoke: Palgrave Macmillan.
