@@ -60,10 +60,8 @@ demo on slide 6.
 
 ### Legal, ethical and professional practice
 
-- **Provenance:** only verified claims reach the report, with sources.
-- **Fair API use:** rate limits, retries and caching.
-- **Secrets:** keys in a git-ignored `.env`.
-- **Cost:** a step budget and cost tracking.
+Only verified, sourced claims reach the report; API rate limits are respected;
+keys stay out of the repository; and costs are capped.
 
 ## What the design got right
 
@@ -92,8 +90,8 @@ three-attempt cap.
 
 ## Weaknesses
 
-1. **The evaluation cannot support my main claim.** Recall was 25%, 55%, 50%
-   and 20%, one run per setting, so I tuned against noise
+1. **The evaluation cannot support my main claim.** Recall varied from 20% to 55%,
+   one run per setting, so I tuned against noise
    ([case study 3](../case-studies/)).
 2. **"Every claim is verified"** means against an abstract, and checks support,
    not coverage.

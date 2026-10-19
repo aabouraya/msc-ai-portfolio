@@ -9,11 +9,10 @@ summary: >-
 ---
 
 The module studies intelligent agents, software that perceives its environment
-and acts towards its goals: logic-based reasoning, deliberative, reactive and
-hybrid architectures, agent communication in KQML, natural language processing
-and deep learning. It then applies them in the design and build of an
-agent-based system, with attention to the legal, social, ethical and
-professional issues of deploying one.
+and acts towards its goals: reasoning, agent architectures, KQML communication,
+natural language processing and deep learning. It applies them in building an
+agent-based system, with attention to its legal, social, ethical and
+professional issues.
 
 <ul class="cards">
   <li class="card">
